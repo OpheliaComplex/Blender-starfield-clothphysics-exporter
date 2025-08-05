@@ -233,12 +233,14 @@ class PostProcessHKXOperator(bpy.types.Operator):
     bl_label = "export post processed .hkx"
 
     filter_glob: bpy.props.StringProperty(default="*.hkx")
+    filepath: bpy.props.StringProperty(subtype='FILE_PATH', options={'SKIP_SAVE'})
 
     def invoke(self, context, event):
         context.window_manager.fileselect_add(self)
         return {'RUNNING_MODAL'}
 
     def execute(self, context):
+
         props = context.scene.hkxPhysicsExport_props
         meshconverter_dll = props.geometry_bridge_dll_path
 

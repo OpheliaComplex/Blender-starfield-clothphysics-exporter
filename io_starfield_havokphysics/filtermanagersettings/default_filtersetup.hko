@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hktagfile version="3">
+  <type id="type1">
+    <name value="hctFilterConfigurationSet"/>
+    <format value="7"/> <!-- record -->
+    <flags value="512"/>
+    <fields count="2">
+      <field name="configurations" typeid="type2" flags="32" /> <!-- hkArray< hctFilterConfigurationSet::Configuration, hkContainerHeapAllocator > -->
+      <field name="currentIndex" typeid="type3" flags="32" /> <!-- int -->
+    </fields>
+  </type>
+  <type id="type2">
+    <name value="hkArray"/>
+    <format value="8"/> <!-- array -->
+    <subtype id="type4" /> <!-- hctFilterConfigurationSet::Configuration -->
+    <parameters count="2">
+      <typeparam id="type4" /> <!-- hctFilterConfigurationSet::Configuration -->
+      <typeparam id="type5" /> <!-- hkContainerHeapAllocator -->
+    </parameters>
+    <flags value="0"/>
+    <fields count="3">
+      <field name="m_data" typeid="type6" flags="34" /> <!-- T*< void > -->
+      <field name="m_size" typeid="type3" flags="34" /> <!-- int -->
+      <field name="m_capacityAndFlags" typeid="type3" flags="34" /> <!-- int -->
+    </fields>
+  </type>
+  <type id="type3">
+    <name value="int"/>
+    <format value="33284"/> <!-- int32 (LE) -->
+  </type>
+  <type id="type4">
+    <name value="hctFilterConfigurationSet::Configuration"/>
+    <format value="7"/> <!-- record -->
+    <fields count="2">
+      <field name="configName" typeid="type7" flags="32" /> <!-- hkStringPtr -->
+      <field name="filterStages" typeid="type8" flags="32" /> <!-- hkArray< hctFilterConfigurationSet::FilterStage, hkContainerHeapAllocator > -->
+    </fields>
+  </type>
+  <type id="type5">
+    <name value="hkContainerHeapAllocator"/>
+    <format value="7"/> <!-- record -->
+    <flags value="16"/>
+    <fields count="0">
+    </fields>
+  </type>
+  <type id="type6">
+    <name value="T*"/>
+    <format value="6"/> <!-- pointer -->
+    <subtype id="type9" /> <!-- void -->
+    <parameters count="1">
+      <typeparam id="type9" /> <!-- void -->
+    </parameters>
+    <flags value="64"/>
+  </type>
+  <type id="type7">
+    <name value="hkStringPtr"/>
+    <format value="131"/> <!-- string (ptr) -->
+    <fields count="1">
+      <field name="stringAndFlag" typeid="type11" flags="36" /> <!-- char* -->
+    </fields>
+  </type>
+  <type id="type8">
+    <name value="hkArray"/>
+    <format value="8"/> <!-- array -->
+    <subtype id="type12" /> <!-- hctFilterConfigurationSet::FilterStage -->
+    <parameters count="2">
+      <typeparam id="type12" /> <!-- hctFilterConfigurationSet::FilterStage -->
+      <typeparam id="type5" /> <!-- hkContainerHeapAllocator -->
+    </parameters>
+    <flags value="0"/>
+    <fields count="3">
+      <field name="m_data" typeid="type6" flags="34" /> <!-- T*< void > -->
+      <field name="m_size" typeid="type3" flags="34" /> <!-- int -->
+      <field name="m_capacityAndFlags" typeid="type3" flags="34" /> <!-- int -->
+    </fields>
+  </type>
+  <type id="type9">
+    <name value="void"/>
+    <format value="0"/> <!-- void -->
+    <flags value="1"/>
+  </type>
+  <type id="type10">
+    <name value="char"/>
+    <format value="8196"/> <!-- uint8 (LE) -->
+  </type>
+  <type id="type11">
+    <name value="char*"/>
+    <format value="3"/> <!-- string (ptr) -->
+  </type>
+  <type id="type12">
+    <name value="hctFilterConfigurationSet::FilterStage"/>
+    <format value="7"/> <!-- record -->
+    <fields count="3">
+      <field name="filterId" typeid="type13" flags="32" /> <!-- unsigned int -->
+      <field name="optionDataVersion" typeid="type13" flags="32" /> <!-- unsigned int -->
+      <field name="options" typeid="type14" flags="32" /> <!-- hkReflect::Any -->
+    </fields>
+  </type>
+  <type id="type13">
+    <name value="unsigned int"/>
+    <format value="32772"/> <!-- uint32 (LE) -->
+  </type>
+  <type id="type14">
+    <name value="hkReflect::Any"/>
+    <format value="8"/> <!-- array -->
+    <subtype id="type0" /> <!-- null -->
+    <fields count="3">
+      <field name="type" typeid="type15" flags="36" /> <!-- hkReflect::QualifiedType< hkReflect::Type > -->
+      <field name="status" typeid="type16" flags="36" /> <!-- unsigned char -->
+      <field name="buf" typeid="type17" flags="36" /> <!-- T[N]< hkUintReal, 4 > -->
+    </fields>
+  </type>
+  <type id="type15">
+    <name value="hkReflect::QualifiedType"/>
+    <format value="6"/> <!-- pointer -->
+    <subtype id="type18" /> <!-- hkReflect::Type -->
+    <parameters count="1">
+      <typeparam id="type18" /> <!-- hkReflect::Type -->
+    </parameters>
+    <fields count="1">
+      <field name="type" typeid="type19" flags="36" /> <!-- T*< hkReflect::Type > -->
+    </fields>
+  </type>
+  <type id="type16">
+    <name value="unsigned char"/>
+    <format value="8196"/> <!-- uint8 (LE) -->
+  </type>
+  <type id="type17">
+    <name value="T[N]"/>
+    <format value="1064"/> <!-- array(4) -->
+    <subtype id="type20" /> <!-- hkUintReal -->
+    <parameters count="2">
+      <typeparam id="type20" /> <!-- hkUintReal -->
+      <valueparam value="4"/>
+    </parameters>
+    <flags value="0"/>
+  </type>
+  <type id="type18">
+    <name value="hkReflect::Type"/>
+    <format value="1"/> <!-- incomplete -->
+  </type>
+  <type id="type19">
+    <name value="T*"/>
+    <format value="6"/> <!-- pointer -->
+    <subtype id="type18" /> <!-- hkReflect::Type -->
+    <parameters count="1">
+      <typeparam id="type18" /> <!-- hkReflect::Type -->
+    </parameters>
+    <flags value="0"/>
+  </type>
+  <type id="type20">
+    <name value="hkUintReal"/>
+    <parent id="type13" /> <!-- unsigned int -->
+  </type>
+  <type id="type21">
+    <name value="hctCreateSkeletonOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="14">
+      <field name="moveToOrigin" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="automatic" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="rigNodes" typeid="type7" flags="32" /> <!-- hkStringPtr -->
+      <field name="rigFile" typeid="type7" flags="32" /> <!-- hkStringPtr -->
+      <field name="selected" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="skinBindings" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="floatSlots" typeid="type7" flags="32" /> <!-- hkStringPtr -->
+      <field name="useOrderInFile" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="substringMatch" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="skeletonName" typeid="type7" flags="32" /> <!-- hkStringPtr -->
+      <field name="partitions" typeid="type7" flags="32" /> <!-- hkStringPtr -->
+      <field name="partitionStartBoneNames" typeid="type7" flags="32" /> <!-- hkStringPtr -->
+      <field name="partitionEndBoneNames" typeid="type7" flags="32" /> <!-- hkStringPtr -->
+      <field name="useRootBoneNameAsSkeletonName" typeid="type22" flags="32" /> <!-- hkBool -->
+    </fields>
+  </type>
+  <type id="type22">
+    <name value="hkBool"/>
+    <format value="8194"/> <!-- bool8 (unsigned, LE) -->
+    <fields count="1">
+      <field name="bool" typeid="type10" flags="36" /> <!-- char -->
+    </fields>
+  </type>
+  <type id="type23">
+    <name value="hctFilterClothSetupStubOptions"/>
+    <format value="7"/> <!-- record -->
+    <version value="1"/>
+    <fields count="13">
+      <field name="useStandalone" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="clothToolOptions" typeid="type14" flags="32" /> <!-- hkReflect::Any -->
+      <field name="sceneFilePath" typeid="type7" flags="32" /> <!-- hkStringPtr -->
+      <field name="clothToolOptionsFilePath" typeid="type7" flags="32" /> <!-- hkStringPtr -->
+      <field name="remoteUpdate" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="remoteUpdateOptions" typeid="type24" flags="32" /> <!-- hctFilterToolStubRemoteOptions -->
+      <field name="runScript" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="runScriptGenerationMode" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="batch" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="scriptSave" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="scriptFilePath" typeid="type7" flags="32" /> <!-- hkStringPtr -->
+      <field name="scriptName" typeid="type7" flags="32" /> <!-- hkStringPtr -->
+      <field name="scriptCommandLineArgs" typeid="type7" flags="32" /> <!-- hkStringPtr -->
+    </fields>
+  </type>
+  <type id="type24">
+    <name value="hctFilterToolStubRemoteOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="5">
+      <field name="reconnectAttempts" typeid="type25" flags="32" /> <!-- hkUint32 -->
+      <field name="sleepTimeInMs" typeid="type25" flags="32" /> <!-- hkUint32 -->
+      <field name="allowAutoLaunch" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="connectAddr" typeid="type7" flags="32" /> <!-- hkStringPtr -->
+      <field name="connectPort" typeid="type25" flags="32" /> <!-- hkUint32 -->
+    </fields>
+  </type>
+  <type id="type25">
+    <name value="hkUint32"/>
+    <parent id="type13" /> <!-- unsigned int -->
+  </type>
+  <type id="type26">
+    <name value="hctExecuteClothSetupOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="1">
+      <field name="platform" typeid="type27" flags="32" /> <!-- hkEnum< hctExecuteClothSetupOptions::Platform, hkInt8 > -->
+    </fields>
+  </type>
+  <type id="type27">
+    <name value="hkEnum"/>
+    <format value="8708"/> <!-- int8 (LE) -->
+    <parameters count="2">
+      <typeparam id="type28" /> <!-- hctExecuteClothSetupOptions::Platform -->
+      <typeparam id="type29" /> <!-- hkInt8 -->
+    </parameters>
+    <fields count="1">
+      <field name="storage" typeid="type29" flags="36" /> <!-- hkInt8 -->
+    </fields>
+  </type>
+  <type id="type28">
+    <name value="hctExecuteClothSetupOptions::Platform"/>
+    <format value="33284"/> <!-- int32 (LE) -->
+  </type>
+  <type id="type29">
+    <name value="hkInt8"/>
+    <parent id="type30" /> <!-- signed char -->
+  </type>
+  <type id="type30">
+    <name value="signed char"/>
+    <format value="8708"/> <!-- int8 (LE) -->
+  </type>
+  <type id="type31">
+    <name value="hctFilterToolStubImplOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="1">
+      <field name="renderer" typeid="type7" flags="32" /> <!-- hkStringPtr -->
+    </fields>
+  </type>
+  <type id="type32">
+    <name value="hctPruneTypesOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="22">
+      <field name="pruneSceneData" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="pruneMeshData" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="pruneSkeletonData" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="pruneAnimationData" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="customClasses" typeid="type7" flags="32" /> <!-- hkStringPtr -->
+      <field name="pruneAllSceneData" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="pruneEnvironmentData" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="pruneResourceData" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="pruneDestructionData" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="pruneAnimationTracks" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="pruneAnnotations" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="pruneIdentityBindingIndices" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="pruneQuantizedBindings" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="pruneAttributes" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="pruneMeshUserChannels" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="pruneAttachments" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="pruneSelectionSets" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="selectionSets" typeid="type7" flags="32" /> <!-- hkStringPtr -->
+      <field name="selectionDeletionMode" typeid="type33" flags="32" /> <!-- hkEnum< hctPruneTypesOptions::selectionDeletionMode, hkInt8 > -->
+      <field name="pruneAllAnimationData" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="pruneMeshBindingData" typeid="type22" flags="32" /> <!-- hkBool -->
+      <field name="pruneRagdollAndMapperData" typeid="type22" flags="32" /> <!-- hkBool -->
+    </fields>
+  </type>
+  <type id="type33">
+    <name value="hkEnum"/>
+    <format value="8708"/> <!-- int8 (LE) -->
+    <parameters count="2">
+      <typeparam id="type34" /> <!-- hctPruneTypesOptions::selectionDeletionMode -->
+      <typeparam id="type29" /> <!-- hkInt8 -->
+    </parameters>
+    <fields count="1">
+      <field name="storage" typeid="type29" flags="36" /> <!-- hkInt8 -->
+    </fields>
+  </type>
+  <type id="type34">
+    <name value="hctPruneTypesOptions::selectionDeletionMode"/>
+    <format value="33284"/> <!-- int32 (LE) -->
+  </type>
+  <type id="type35">
+    <name value="hctPlatformWriterOptions"/>
+    <format value="7"/> <!-- record -->
+    <version value="2"/>
+    <fields count="5">
+      <field name="filename" typeid="type7" flags="32" /> <!-- hkStringPtr -->
+      <field name="format" typeid="type36" flags="32" /> <!-- hkEnum< hctPlatformWriterOptions::Format, hkInt8 > -->
+      <field name="target" typeid="type7" flags="32" /> <!-- hkStringPtr -->
+      <field name="targetLocalIndex" typeid="type3" flags="32" /> <!-- int -->
+      <field name="saveEnvironmentData" typeid="type22" flags="32" /> <!-- hkBool -->
+    </fields>
+  </type>
+  <type id="type36">
+    <name value="hkEnum"/>
+    <format value="8708"/> <!-- int8 (LE) -->
+    <parameters count="2">
+      <typeparam id="type37" /> <!-- hctPlatformWriterOptions::Format -->
+      <typeparam id="type29" /> <!-- hkInt8 -->
+    </parameters>
+    <fields count="1">
+      <field name="storage" typeid="type29" flags="36" /> <!-- hkInt8 -->
+    </fields>
+  </type>
+  <type id="type37">
+    <name value="hctPlatformWriterOptions::Format"/>
+    <format value="33284"/> <!-- int32 (LE) -->
+  </type>
+  <object id="object1" typeid="type1" > <!-- hctFilterConfigurationSet -->
+    <record> <!-- hctFilterConfigurationSet -->
+      <field name="configurations">
+        <array count="1" elementtypeid="type4"> <!-- ArrayOf hctFilterConfigurationSet::Configuration -->
+          <record> <!-- hctFilterConfigurationSet::Configuration -->
+            <field name="configName"><string value="Default"/></field>
+            <field name="filterStages">
+              <array count="7" elementtypeid="type12"> <!-- ArrayOf hctFilterConfigurationSet::FilterStage -->
+                <record> <!-- hctFilterConfigurationSet::FilterStage -->
+                  <field name="filterId"><integer value="769831784"/></field>
+                  <field name="optionDataVersion"><integer value="66056"/></field>
+                  <field name="options">
+                    <array count="1" elementtypeid="type21"> <!-- ArrayOf hctCreateSkeletonOptions -->
+                      <record> <!-- hctCreateSkeletonOptions -->
+                        <field name="moveToOrigin"><bool value="false"/></field>
+                        <field name="automatic"><bool value="true"/></field>
+                        <field name="rigNodes"><string value="Root;HumanExportRoot;AnimObjectA;AnimObjectB;AnimObjectC;AnimObjectD;Camera Control;CamTargetParent;CameraTarget;COM;C_Hips;R_Thigh;R_Calf;R_Foot;R_Toe;R_CalfMass;R_Knee;R_Thigh_Twist;R_Thigh_Twist1;L_Thigh;L_Calf;L_Foot;L_Toe;L_CalfMass;L_Knee;L_Thigh_Twist;L_Thigh_Twist1;L_Butt;R_Butt;C_Tail_Root;C_Tail_01;C_Tail_02;C_Tail_03;C_Tail_04;C_Tail_05;C_Tail_06;C_Tail_07;C_Tail_08;C_GenitalsRoot;C_Anus_LC;C_Penis_Root;C_Penis_01;C_Penis_02;C_Penis_03;C_Penis_04;C_Penis_05;C_Penis_06;R_Balls;L_Balls;C_Anus_Deep;C_Anus_B;C_Anus_F;C_Anus_RC;R_Vag;L_Vag;C_Spine;C_Spine1;C_Spine2;C_Chest;C_Neck;C_Neck1;C_Head;L_Eye;R_Eye;Eye_Target;C_Tongue1;C_Tongue2;C_Tongue3;C_Tongue4;R_Ear1;R_Ear2;L_Ear1;L_Ear2;PigtailBoneR_0_1;PigtailBoneR_19_20;PigtailBoneR_22_23;PigtailBoneR_26_27;PigtailBoneR_30_31;PigtailBoneR_35_36;PigtailBoneR_40_41;PigtailBoneR_46_47;PigtailBoneR_53_54;PigtailBoneR_58_59;PigtailBoneR_61_62;PigtailBoneR_67_68;PigtailBoneR_70_71;PigtailBoneR_77_78;PigtailBoneR_80_81;PigtailBoneL_0_1;PigtailBoneL_19_20;PigtailBoneL_22_23;PigtailBoneL_26_27;PigtailBoneL_30_31;PigtailBoneL_35_36;PigtailBoneL_40_41;PigtailBoneL_46_47;PigtailBoneL_53_54;PigtailBoneL_58_59;PigtailBoneL_61_62;PigtailBoneL_67_68;PigtailBoneL_70_71;PigtailBoneL_77_78;PigtailBoneL_80_81;BangBoneR44_45;BangBoneR40_41;BangBoneR36_37;BangBoneR32_33;BangBoneR28_29;BangBoneR24_25;BangBoneR20_21;BangBoneR16_17;BangBoneR12_13;BangBoneR8_9;BangBoneR4_5;BangBoneR0_1;BangBoneL0_1;BangBoneL4_5;BangBoneL8_9;BangBoneL12_13;BangBoneL16_17;BangBoneL20_21;BangBoneL24_25;BangBoneL28_29;BangBoneL32_33;BangBoneL36_37;BangBoneL40_41;BangBoneL44_45;C_Neck_Twist;L_Clavicle;L_Biceps;L_Forearm;L_Wrist;L_AnimObject1;L_AnimObject2;L_AnimObject3;L_Thumb;L_Thumb1;L_Thumb2;L_Index;L_Index1;L_Index2;L_Middle;L_Middle1;L_Middle2;L_Ring;L_Ring1;L_Ring2;L_Cup;L_Pinky;L_Pinky1;L_Pinky2;L_Arm;L_Wrist_Twist;L_Wrist_Twist1;L_Wrist_Twist2;L_Elbow;L_Biceps_Twist;L_ArmMass;L_Deltoid;L_Biceps_Twist1;C_BackPack;C_BackPackHose;R_Clavicle;R_Biceps;R_Forearm;R_Wrist;R_AnimObject1;R_AnimObject2;R_AnimObject3;R_Cup;R_Pinky;R_Pinky1;R_Pinky2;R_Thumb;R_Thumb1;R_Thumb2;R_Ring;R_Ring1;R_Ring2;R_Middle;R_Middle1;R_Middle2;R_Index;R_Index1;R_Index2;R_Arm;R_Wrist_Twist;R_Wrist_Twist1;R_Wrist_Twist2;R_Elbow;R_Biceps_Twist;R_ArmMass;R_Deltoid;R_Biceps_Twist1;WEAPON;R_HandIk;L_HandIk;WeaponLeft;DirectAt;R_Pecs;R_Nipple;L_Pecs;L_Nipple;C_Belly;C_Waist;Camera Control FP;Camera;CharacterBumper;CharacterController;"/></field>
+                        <field name="rigFile"><string/></field>
+                        <field name="selected"><bool value="false"/></field>
+                        <field name="skinBindings"><bool value="false"/></field>
+                        <field name="floatSlots"><string value=""/></field>
+                        <field name="useOrderInFile"><bool value="false"/></field>
+                        <field name="substringMatch"><bool value="false"/></field>
+                        <field name="skeletonName"><string value=""/></field>
+                        <field name="partitions"><string value=""/></field>
+                        <field name="partitionStartBoneNames"><string value=""/></field>
+                        <field name="partitionEndBoneNames"><string value=""/></field>
+                        <field name="useRootBoneNameAsSkeletonName"><bool value="true"/></field>
+                      </record>
+                    </array>
+                  </field>
+                </record>
+                <record> <!-- hctFilterConfigurationSet::FilterStage -->
+                  <field name="filterId"><integer value="3007971233"/></field>
+                  <field name="optionDataVersion"><integer value="65792"/></field>
+                  <field name="options">
+                    <array count="0" elementtypeid="type0"> <!-- ArrayOf null -->
+                    </array>
+                  </field>
+                </record>
+                <record> <!-- hctFilterConfigurationSet::FilterStage -->
+                  <field name="filterId"><integer value="1879060686"/></field>
+                  <field name="optionDataVersion"><integer value="131072"/></field>
+                  <field name="options">
+                    <array count="1" elementtypeid="type23"> <!-- ArrayOf hctFilterClothSetupStubOptions -->
+                      <record> <!-- hctFilterClothSetupStubOptions -->
+                        <field name="useStandalone"><bool value="true"/></field>
+                        <field name="clothToolOptions">
+                          <array count="0" elementtypeid="type0"> <!-- ArrayOf null -->
+                          </array>
+                        </field>
+                        <field name="sceneFilePath"><string value=".\clothScene"/></field>
+                        <field name="clothToolOptionsFilePath"><string value=".\clothsetup.xcfg"/></field>
+                        <field name="remoteUpdate"><bool value="false"/></field>
+                        <field name="remoteUpdateOptions">
+                          <record> <!-- hctFilterToolStubRemoteOptions -->
+                            <field name="reconnectAttempts"><integer value="10"/></field>
+                            <field name="sleepTimeInMs"><integer value="20"/></field>
+                            <field name="allowAutoLaunch"><bool value="true"/></field>
+                            <field name="connectAddr"><string value="localhost"/></field>
+                            <field name="connectPort"><integer value="25111"/></field>
+                          </record>
+                        </field>
+                        <field name="runScript"><bool value="false"/></field>
+                        <field name="runScriptGenerationMode"><bool value="false"/></field>
+                        <field name="batch"><bool value="false"/></field>
+                        <field name="scriptSave"><bool value="false"/></field>
+                        <field name="scriptFilePath"><string value=""/></field>
+                        <field name="scriptName"><string value=""/></field>
+                        <field name="scriptCommandLineArgs"><string value=""/></field>
+                      </record>
+                    </array>
+                  </field>
+                </record>
+                <record> <!-- hctFilterConfigurationSet::FilterStage -->
+                  <field name="filterId"><integer value="3292987041"/></field>
+                  <field name="optionDataVersion"><integer value="65792"/></field>
+                  <field name="options">
+                    <array count="1" elementtypeid="type26"> <!-- ArrayOf hctExecuteClothSetupOptions -->
+                      <record> <!-- hctExecuteClothSetupOptions -->
+                        <field name="platform"><integer value="0"/><!-- PC --></field>
+                      </record>
+                    </array>
+                  </field>
+                </record>
+                <record> <!-- hctFilterConfigurationSet::FilterStage -->
+                  <field name="filterId"><integer value="1879060683"/></field>
+                  <field name="optionDataVersion"><integer value="65795"/></field>
+                  <field name="options">
+                    <array count="1" elementtypeid="type31"> <!-- ArrayOf hctFilterToolStubImplOptions -->
+                      <record> <!-- hctFilterToolStubImplOptions -->
+                        <field name="renderer"><string value=""/></field>
+                      </record>
+                    </array>
+                  </field>
+                </record>
+                <record> <!-- hctFilterConfigurationSet::FilterStage -->
+                  <field name="filterId"><integer value="2496164476"/></field>
+                  <field name="optionDataVersion"><integer value="66048"/></field>
+                  <field name="options">
+                    <array count="1" elementtypeid="type32"> <!-- ArrayOf hctPruneTypesOptions -->
+                      <record> <!-- hctPruneTypesOptions -->
+                        <field name="pruneSceneData"><bool value="true"/></field>
+                        <field name="pruneMeshData"><bool value="false"/></field>
+                        <field name="pruneSkeletonData"><bool value="false"/></field>
+                        <field name="pruneAnimationData"><bool value="true"/></field>
+                        <field name="customClasses"><string value=""/></field>
+                        <field name="pruneAllSceneData"><bool value="true"/></field>
+                        <field name="pruneEnvironmentData"><bool value="true"/></field>
+                        <field name="pruneResourceData"><bool value="true"/></field>
+                        <field name="pruneDestructionData"><bool value="false"/></field>
+                        <field name="pruneAnimationTracks"><bool value="false"/></field>
+                        <field name="pruneAnnotations"><bool value="false"/></field>
+                        <field name="pruneIdentityBindingIndices"><bool value="false"/></field>
+                        <field name="pruneQuantizedBindings"><bool value="false"/></field>
+                        <field name="pruneAttributes"><bool value="false"/></field>
+                        <field name="pruneMeshUserChannels"><bool value="false"/></field>
+                        <field name="pruneAttachments"><bool value="true"/></field>
+                        <field name="pruneSelectionSets"><bool value="false"/></field>
+                        <field name="selectionSets"><string value=""/></field>
+                        <field name="selectionDeletionMode"><integer value="1"/><!-- HK_SELECTION_DELETE_SELECTED --></field>
+                        <field name="pruneAllAnimationData"><bool value="false"/></field>
+                        <field name="pruneMeshBindingData"><bool value="true"/></field>
+                        <field name="pruneRagdollAndMapperData"><bool value="true"/></field>
+                      </record>
+                    </array>
+                  </field>
+                </record>
+                <record> <!-- hctFilterConfigurationSet::FilterStage -->
+                  <field name="filterId"><integer value="2876798309"/></field>
+                  <field name="optionDataVersion"><integer value="66048"/></field>
+                  <field name="options">
+                    <array count="1" elementtypeid="type35"> <!-- ArrayOf hctPlatformWriterOptions -->
+                      <record> <!-- hctPlatformWriterOptions -->
+                        <field name="filename"><string value=".\out.hkx"/></field>
+                        <field name="format"><integer value="1"/><!-- FORMAT_NATIVE --></field>
+                        <field name="target"><string value="64g"/></field>
+                        <field name="targetLocalIndex"><integer value="0"/></field>
+                        <field name="saveEnvironmentData"><bool value="false"/></field>
+                      </record>
+                    </array>
+                  </field>
+                </record>
+              </array>
+            </field>
+          </record>
+        </array>
+      </field>
+      <field name="currentIndex"><integer value="0"/></field>
+    </record>
+  </object>
+</hktagfile>

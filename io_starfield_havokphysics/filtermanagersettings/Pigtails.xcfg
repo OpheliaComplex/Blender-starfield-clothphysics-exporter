@@ -1,0 +1,1994 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hktagfile version="3">
+  <type id="type1">
+    <name value="hctClothSetup20141Options"/>
+    <parent id="type2" /> <!-- hkReferencedObject -->
+    <format value="7"/> <!-- record -->
+    <fields count="1">
+      <field name="clothData" typeid="type3" flags="32" /> <!-- hkArray< hkRefPtr< hctClothSetupClothData20141Options >, hkContainerHeapAllocator > -->
+    </fields>
+  </type>
+  <type id="type2">
+    <name value="hkReferencedObject"/>
+    <parent id="type4" /> <!-- hkBaseObject -->
+    <format value="7"/> <!-- record -->
+    <version value="4"/>
+    <fields count="0">
+    </fields>
+  </type>
+  <type id="type3">
+    <name value="hkArray"/>
+    <format value="8"/> <!-- array -->
+    <subtype id="type5" /> <!-- hkRefPtr< hctClothSetupClothData20141Options > -->
+    <parameters count="2">
+      <typeparam id="type5" /> <!-- hkRefPtr< hctClothSetupClothData20141Options > -->
+      <typeparam id="type6" /> <!-- hkContainerHeapAllocator -->
+    </parameters>
+    <flags value="0"/>
+    <fields count="3">
+      <field name="m_data" typeid="type7" flags="34" /> <!-- T*< void > -->
+      <field name="m_size" typeid="type8" flags="34" /> <!-- int -->
+      <field name="m_capacityAndFlags" typeid="type8" flags="34" /> <!-- int -->
+    </fields>
+  </type>
+  <type id="type4">
+    <name value="hkBaseObject"/>
+    <format value="7"/> <!-- record -->
+    <flags value="144"/>
+    <fields count="0">
+    </fields>
+  </type>
+  <type id="type5">
+    <name value="hkRefPtr"/>
+    <format value="6"/> <!-- pointer -->
+    <subtype id="type9" /> <!-- hctClothSetupClothData20141Options -->
+    <parameters count="1">
+      <typeparam id="type9" /> <!-- hctClothSetupClothData20141Options -->
+    </parameters>
+    <fields count="1">
+      <field name="ptr" typeid="type7" flags="36" /> <!-- T*< void > -->
+    </fields>
+  </type>
+  <type id="type6">
+    <name value="hkContainerHeapAllocator"/>
+    <format value="7"/> <!-- record -->
+    <flags value="16"/>
+    <fields count="0">
+    </fields>
+  </type>
+  <type id="type7">
+    <name value="T*"/>
+    <format value="6"/> <!-- pointer -->
+    <subtype id="type10" /> <!-- void -->
+    <parameters count="1">
+      <typeparam id="type10" /> <!-- void -->
+    </parameters>
+    <flags value="64"/>
+  </type>
+  <type id="type8">
+    <name value="int"/>
+    <format value="33284"/> <!-- int32 (LE) -->
+  </type>
+  <type id="type9">
+    <name value="hctClothSetupClothData20141Options"/>
+    <parent id="type2" /> <!-- hkReferencedObject -->
+    <format value="7"/> <!-- record -->
+    <fields count="12">
+      <field name="name" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="currentState" typeid="type8" flags="32" /> <!-- int -->
+      <field name="defaultState" typeid="type8" flags="32" /> <!-- int -->
+      <field name="setupMeshes" typeid="type12" flags="32" /> <!-- hkArray< T*< hctClothSetupObjectData >, hkContainerHeapAllocator > -->
+      <field name="simSetupMeshes" typeid="type12" flags="32" /> <!-- hkArray< T*< hctClothSetupObjectData >, hkContainerHeapAllocator > -->
+      <field name="buffers" typeid="type12" flags="32" /> <!-- hkArray< T*< hctClothSetupObjectData >, hkContainerHeapAllocator > -->
+      <field name="simCloth" typeid="type12" flags="32" /> <!-- hkArray< T*< hctClothSetupObjectData >, hkContainerHeapAllocator > -->
+      <field name="operators" typeid="type12" flags="32" /> <!-- hkArray< T*< hctClothSetupObjectData >, hkContainerHeapAllocator > -->
+      <field name="transformSets" typeid="type12" flags="32" /> <!-- hkArray< T*< hctClothSetupObjectData >, hkContainerHeapAllocator > -->
+      <field name="simClothConstraints" typeid="type12" flags="32" /> <!-- hkArray< T*< hctClothSetupObjectData >, hkContainerHeapAllocator > -->
+      <field name="clothStates" typeid="type12" flags="32" /> <!-- hkArray< T*< hctClothSetupObjectData >, hkContainerHeapAllocator > -->
+      <field name="stateTransitions" typeid="type12" flags="32" /> <!-- hkArray< T*< hctClothSetupObjectData >, hkContainerHeapAllocator > -->
+    </fields>
+  </type>
+  <type id="type10">
+    <name value="void"/>
+    <format value="0"/> <!-- void -->
+    <flags value="1"/>
+  </type>
+  <type id="type11">
+    <name value="hkStringPtr"/>
+    <format value="131"/> <!-- string (ptr) -->
+    <fields count="1">
+      <field name="stringAndFlag" typeid="type14" flags="36" /> <!-- char* -->
+    </fields>
+  </type>
+  <type id="type12">
+    <name value="hkArray"/>
+    <format value="8"/> <!-- array -->
+    <subtype id="type15" /> <!-- T*< hctClothSetupObjectData > -->
+    <parameters count="2">
+      <typeparam id="type15" /> <!-- T*< hctClothSetupObjectData > -->
+      <typeparam id="type6" /> <!-- hkContainerHeapAllocator -->
+    </parameters>
+    <flags value="0"/>
+    <fields count="3">
+      <field name="m_data" typeid="type7" flags="34" /> <!-- T*< void > -->
+      <field name="m_size" typeid="type8" flags="34" /> <!-- int -->
+      <field name="m_capacityAndFlags" typeid="type8" flags="34" /> <!-- int -->
+    </fields>
+  </type>
+  <type id="type13">
+    <name value="char"/>
+    <format value="8196"/> <!-- uint8 (LE) -->
+  </type>
+  <type id="type14">
+    <name value="char*"/>
+    <format value="3"/> <!-- string (ptr) -->
+  </type>
+  <type id="type15">
+    <name value="T*"/>
+    <format value="6"/> <!-- pointer -->
+    <subtype id="type16" /> <!-- hctClothSetupObjectData -->
+    <parameters count="1">
+      <typeparam id="type16" /> <!-- hctClothSetupObjectData -->
+    </parameters>
+    <flags value="0"/>
+  </type>
+  <type id="type16">
+    <name value="hctClothSetupObjectData"/>
+    <parent id="type2" /> <!-- hkReferencedObject -->
+    <format value="7"/> <!-- record -->
+    <fields count="2">
+      <field name="ref" typeid="type17" flags="32" /> <!-- hclToolNamedObjectReference -->
+      <field name="options" typeid="type18" flags="32" /> <!-- hkReflect::Any -->
+    </fields>
+  </type>
+  <type id="type17">
+    <name value="hclToolNamedObjectReference"/>
+    <format value="7"/> <!-- record -->
+    <fields count="3">
+      <field name="pluginName" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="objectName" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="hash" typeid="type19" flags="32" /> <!-- hkUint32 -->
+    </fields>
+  </type>
+  <type id="type18">
+    <name value="hkReflect::Any"/>
+    <format value="8"/> <!-- array -->
+    <subtype id="type0" /> <!-- null -->
+    <fields count="3">
+      <field name="type" typeid="type20" flags="36" /> <!-- hkReflect::QualifiedType< hkReflect::Type > -->
+      <field name="status" typeid="type21" flags="36" /> <!-- unsigned char -->
+      <field name="buf" typeid="type22" flags="36" /> <!-- T[N]< hkUintReal, 4 > -->
+    </fields>
+  </type>
+  <type id="type19">
+    <name value="hkUint32"/>
+    <parent id="type23" /> <!-- unsigned int -->
+  </type>
+  <type id="type20">
+    <name value="hkReflect::QualifiedType"/>
+    <format value="6"/> <!-- pointer -->
+    <subtype id="type24" /> <!-- hkReflect::Type -->
+    <parameters count="1">
+      <typeparam id="type24" /> <!-- hkReflect::Type -->
+    </parameters>
+    <fields count="1">
+      <field name="type" typeid="type25" flags="36" /> <!-- T*< hkReflect::Type > -->
+    </fields>
+  </type>
+  <type id="type21">
+    <name value="unsigned char"/>
+    <format value="8196"/> <!-- uint8 (LE) -->
+  </type>
+  <type id="type22">
+    <name value="T[N]"/>
+    <format value="1064"/> <!-- array(4) -->
+    <subtype id="type26" /> <!-- hkUintReal -->
+    <parameters count="2">
+      <typeparam id="type26" /> <!-- hkUintReal -->
+      <valueparam value="4"/>
+    </parameters>
+    <flags value="0"/>
+  </type>
+  <type id="type23">
+    <name value="unsigned int"/>
+    <format value="32772"/> <!-- uint32 (LE) -->
+  </type>
+  <type id="type24">
+    <name value="hkReflect::Type"/>
+    <format value="1"/> <!-- incomplete -->
+  </type>
+  <type id="type25">
+    <name value="T*"/>
+    <format value="6"/> <!-- pointer -->
+    <subtype id="type24" /> <!-- hkReflect::Type -->
+    <parameters count="1">
+      <typeparam id="type24" /> <!-- hkReflect::Type -->
+    </parameters>
+    <flags value="0"/>
+  </type>
+  <type id="type26">
+    <name value="hkUintReal"/>
+    <parent id="type23" /> <!-- unsigned int -->
+  </type>
+  <object id="object1" typeid="type1" > <!-- hctClothSetup20141Options -->
+    <record> <!-- hctClothSetup20141Options -->
+      <field name="clothData">
+        <array count="1" elementtypeid="type5"> <!-- ArrayOf hkRefPtr< hctClothSetupClothData20141Options > -->
+          <pointer id="object2"/>
+        </array>
+      </field>
+    </record>
+  </object>
+  <object id="object2" typeid="type9" > <!-- hctClothSetupClothData20141Options -->
+    <record> <!-- hctClothSetupClothData20141Options -->
+      <field name="name"><string value="Character Bone Deforming Clothing"/></field>
+      <field name="currentState"><integer value="1"/></field>
+      <field name="defaultState"><integer value="0"/></field>
+      <field name="setupMeshes">
+        <array count="1" elementtypeid="type15"> <!-- ArrayOf T*< hctClothSetupObjectData > -->
+          <pointer id="object3"/>
+        </array>
+      </field>
+      <field name="simSetupMeshes">
+        <array count="1" elementtypeid="type15"> <!-- ArrayOf T*< hctClothSetupObjectData > -->
+          <pointer id="object4"/>
+        </array>
+      </field>
+      <field name="buffers">
+        <array count="3" elementtypeid="type15"> <!-- ArrayOf T*< hctClothSetupObjectData > -->
+          <pointer id="object5"/>
+          <pointer id="object6"/>
+          <pointer id="object7"/>
+        </array>
+      </field>
+      <field name="simCloth">
+        <array count="1" elementtypeid="type15"> <!-- ArrayOf T*< hctClothSetupObjectData > -->
+          <pointer id="object8"/>
+        </array>
+      </field>
+      <field name="operators">
+        <array count="5" elementtypeid="type15"> <!-- ArrayOf T*< hctClothSetupObjectData > -->
+          <pointer id="object9"/>
+          <pointer id="object10"/>
+          <pointer id="object11"/>
+          <pointer id="object12"/>
+          <pointer id="object13"/>
+        </array>
+      </field>
+      <field name="transformSets">
+        <array count="1" elementtypeid="type15"> <!-- ArrayOf T*< hctClothSetupObjectData > -->
+          <pointer id="object14"/>
+        </array>
+      </field>
+      <field name="simClothConstraints">
+        <array count="4" elementtypeid="type15"> <!-- ArrayOf T*< hctClothSetupObjectData > -->
+          <pointer id="object15"/>
+          <pointer id="object16"/>
+          <pointer id="object17"/>
+          <pointer id="object18"/>
+        </array>
+      </field>
+      <field name="clothStates">
+        <array count="2" elementtypeid="type15"> <!-- ArrayOf T*< hctClothSetupObjectData > -->
+          <pointer id="object19"/>
+          <pointer id="object20"/>
+        </array>
+      </field>
+      <field name="stateTransitions">
+        <array count="0" elementtypeid="type15"> <!-- ArrayOf T*< hctClothSetupObjectData > -->
+        </array>
+      </field>
+    </record>
+  </object>
+  <type id="type27">
+    <name value="hctClothSetupDefaultMeshOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="2">
+      <field name="name" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="originalNodeName" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+    </fields>
+  </type>
+  <object id="object3" typeid="type16" > <!-- hctClothSetupObjectData -->
+    <record> <!-- hctClothSetupObjectData -->
+      <field name="ref">
+        <record> <!-- hclToolNamedObjectReference -->
+          <field name="pluginName"><string value="SetupDefaultMesh"/></field>
+          <field name="objectName"><string value="PigtailsSim SceneMesh"/></field>
+          <field name="hash"><integer value="1228252329"/></field>
+        </record>
+      </field>
+      <field name="options">
+        <array count="1" elementtypeid="type27"> <!-- ArrayOf hctClothSetupDefaultMeshOptions -->
+          <record> <!-- hctClothSetupDefaultMeshOptions -->
+            <field name="name"><string value="PigtailsSim SceneMesh"/></field>
+            <field name="originalNodeName"><string value="PigtailsSim"/></field>
+          </record>
+        </array>
+      </field>
+    </record>
+  </object>
+  <type id="type28">
+    <name value="hctClothSetupDefaultSimMeshOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="6">
+      <field name="name" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="collapseVerts" typeid="type29" flags="32" /> <!-- hkBool -->
+      <field name="collapseThreshold" typeid="type30" flags="32" /> <!-- hkReal -->
+      <field name="originalMesh" typeid="type17" flags="32" /> <!-- hclToolNamedObjectReference -->
+      <field name="selection" typeid="type31" flags="32" /> <!-- hclVertexSelectionInput -->
+      <field name="vertexSelection" typeid="type31" flags="32" /> <!-- hclVertexSelectionInput -->
+    </fields>
+  </type>
+  <type id="type29">
+    <name value="hkBool"/>
+    <format value="8194"/> <!-- bool8 (unsigned, LE) -->
+    <fields count="1">
+      <field name="bool" typeid="type13" flags="36" /> <!-- char -->
+    </fields>
+  </type>
+  <type id="type30">
+    <name value="hkReal"/>
+    <parent id="type32" /> <!-- float -->
+  </type>
+  <type id="type31">
+    <name value="hclVertexSelectionInput"/>
+    <format value="7"/> <!-- record -->
+    <fields count="2">
+      <field name="type" typeid="type33" flags="32" /> <!-- hkEnum< hclVertexSelectionInput::VertexSelectionType, hkUint32 > -->
+      <field name="channelName" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+    </fields>
+  </type>
+  <type id="type32">
+    <name value="float"/>
+    <format value="1525253"/> <!-- float -->
+  </type>
+  <type id="type33">
+    <name value="hkEnum"/>
+    <format value="32772"/> <!-- uint32 (LE) -->
+    <parameters count="2">
+      <typeparam id="type34" /> <!-- hclVertexSelectionInput::VertexSelectionType -->
+      <typeparam id="type19" /> <!-- hkUint32 -->
+    </parameters>
+    <fields count="1">
+      <field name="storage" typeid="type19" flags="36" /> <!-- hkUint32 -->
+    </fields>
+  </type>
+  <type id="type34">
+    <name value="hclVertexSelectionInput::VertexSelectionType"/>
+    <format value="33284"/> <!-- int32 (LE) -->
+  </type>
+  <object id="object4" typeid="type16" > <!-- hctClothSetupObjectData -->
+    <record> <!-- hctClothSetupObjectData -->
+      <field name="ref">
+        <record> <!-- hclToolNamedObjectReference -->
+          <field name="pluginName"><string value="SetupSimMesh"/></field>
+          <field name="objectName"><string value="SimSkirt SimMesh"/></field>
+          <field name="hash"><integer value="1675554456"/></field>
+        </record>
+      </field>
+      <field name="options">
+        <array count="1" elementtypeid="type28"> <!-- ArrayOf hctClothSetupDefaultSimMeshOptions -->
+          <record> <!-- hctClothSetupDefaultSimMeshOptions -->
+            <field name="name"><string value="SimSkirt SimMesh"/></field>
+            <field name="collapseVerts"><bool value="true"/></field>
+            <field name="collapseThreshold"><real dec="0" hex="#0"/></field>
+            <field name="originalMesh">
+              <record> <!-- hclToolNamedObjectReference -->
+                <field name="pluginName"><string value="SetupDefaultMesh"/></field>
+                <field name="objectName"><string value="PigtailsSim SceneMesh"/></field>
+                <field name="hash"><integer value="1228252329"/></field>
+              </record>
+            </field>
+            <field name="selection">
+              <record> <!-- hclVertexSelectionInput -->
+                <field name="type"><integer value="0"/><!-- VERTEX_SELECTION_ALL --></field>
+                <field name="channelName"><string/></field>
+              </record>
+            </field>
+            <field name="vertexSelection">
+              <record> <!-- hclVertexSelectionInput -->
+                <field name="type"><integer value="0"/><!-- VERTEX_SELECTION_ALL --></field>
+                <field name="channelName"><string/></field>
+              </record>
+            </field>
+          </record>
+        </array>
+      </field>
+    </record>
+  </object>
+  <type id="type35">
+    <name value="hctClothSetupScratchBufferOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="4">
+      <field name="name" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="setupMesh" typeid="type17" flags="32" /> <!-- hclToolNamedObjectReference -->
+      <field name="storage" typeid="type36" flags="32" /> <!-- hkEnum< hctClothSetupScratchBufferOptions::Storage, hkUint8 > -->
+      <field name="storeTriangles" typeid="type29" flags="32" /> <!-- hkBool -->
+    </fields>
+  </type>
+  <type id="type36">
+    <name value="hkEnum"/>
+    <format value="8196"/> <!-- uint8 (LE) -->
+    <parameters count="2">
+      <typeparam id="type37" /> <!-- hctClothSetupScratchBufferOptions::Storage -->
+      <typeparam id="type38" /> <!-- hkUint8 -->
+    </parameters>
+    <fields count="1">
+      <field name="storage" typeid="type38" flags="36" /> <!-- hkUint8 -->
+    </fields>
+  </type>
+  <type id="type37">
+    <name value="hctClothSetupScratchBufferOptions::Storage"/>
+    <format value="33284"/> <!-- int32 (LE) -->
+  </type>
+  <type id="type38">
+    <name value="hkUint8"/>
+    <parent id="type21" /> <!-- unsigned char -->
+  </type>
+  <object id="object5" typeid="type16" > <!-- hctClothSetupObjectData -->
+    <record> <!-- hctClothSetupObjectData -->
+      <field name="ref">
+        <record> <!-- hclToolNamedObjectReference -->
+          <field name="pluginName"><string value="SetupScratchBuffer"/></field>
+          <field name="objectName"><string value="Sim Scratch"/></field>
+          <field name="hash"><integer value="974418409"/></field>
+        </record>
+      </field>
+      <field name="options">
+        <array count="1" elementtypeid="type35"> <!-- ArrayOf hctClothSetupScratchBufferOptions -->
+          <record> <!-- hctClothSetupScratchBufferOptions -->
+            <field name="name"><string value="Sim Scratch"/></field>
+            <field name="setupMesh">
+              <record> <!-- hclToolNamedObjectReference -->
+                <field name="pluginName"><string value="SetupDefaultMesh"/></field>
+                <field name="objectName"><string value="PigtailsSim SceneMesh"/></field>
+                <field name="hash"><integer value="1228252329"/></field>
+              </record>
+            </field>
+            <field name="storage"><integer value="1"/><!-- STORAGE_PN --></field>
+            <field name="storeTriangles"><bool value="false"/></field>
+          </record>
+        </array>
+      </field>
+    </record>
+  </object>
+  <type id="type39">
+    <name value="hctClothSetupSceneBufferOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="2">
+      <field name="name" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="setupMesh" typeid="type17" flags="32" /> <!-- hclToolNamedObjectReference -->
+    </fields>
+  </type>
+  <object id="object6" typeid="type16" > <!-- hctClothSetupObjectData -->
+    <record> <!-- hctClothSetupObjectData -->
+      <field name="ref">
+        <record> <!-- hclToolNamedObjectReference -->
+          <field name="pluginName"><string value="SetupSceneBuffer"/></field>
+          <field name="objectName"><string value="StaticBuf"/></field>
+          <field name="hash"><integer value="44796867"/></field>
+        </record>
+      </field>
+      <field name="options">
+        <array count="1" elementtypeid="type39"> <!-- ArrayOf hctClothSetupSceneBufferOptions -->
+          <record> <!-- hctClothSetupSceneBufferOptions -->
+            <field name="name"><string value="StaticBuf"/></field>
+            <field name="setupMesh">
+              <record> <!-- hclToolNamedObjectReference -->
+                <field name="pluginName"><string value="SetupDefaultMesh"/></field>
+                <field name="objectName"><string value="PigtailsSim SceneMesh"/></field>
+                <field name="hash"><integer value="1228252329"/></field>
+              </record>
+            </field>
+          </record>
+        </array>
+      </field>
+    </record>
+  </object>
+  <type id="type40">
+    <name value="hctClothSetupSimBufferOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="3">
+      <field name="name" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="type" typeid="type41" flags="32" /> <!-- hkEnum< hctClothSetupSimBufferOptions::Type, hkUint8 > -->
+      <field name="simCloth" typeid="type17" flags="32" /> <!-- hclToolNamedObjectReference -->
+    </fields>
+  </type>
+  <type id="type41">
+    <name value="hkEnum"/>
+    <format value="8196"/> <!-- uint8 (LE) -->
+    <parameters count="2">
+      <typeparam id="type42" /> <!-- hctClothSetupSimBufferOptions::Type -->
+      <typeparam id="type38" /> <!-- hkUint8 -->
+    </parameters>
+    <fields count="1">
+      <field name="storage" typeid="type38" flags="36" /> <!-- hkUint8 -->
+    </fields>
+  </type>
+  <type id="type42">
+    <name value="hctClothSetupSimBufferOptions::Type"/>
+    <format value="33284"/> <!-- int32 (LE) -->
+  </type>
+  <object id="object7" typeid="type16" > <!-- hctClothSetupObjectData -->
+    <record> <!-- hctClothSetupObjectData -->
+      <field name="ref">
+        <record> <!-- hclToolNamedObjectReference -->
+          <field name="pluginName"><string value="SetupSimBuffer"/></field>
+          <field name="objectName"><string value="Sim Buf"/></field>
+          <field name="hash"><integer value="1032708095"/></field>
+        </record>
+      </field>
+      <field name="options">
+        <array count="1" elementtypeid="type40"> <!-- ArrayOf hctClothSetupSimBufferOptions -->
+          <record> <!-- hctClothSetupSimBufferOptions -->
+            <field name="name"><string value="Sim Buf"/></field>
+            <field name="type"><integer value="0"/><!-- CURRENT_POSITIONS --></field>
+            <field name="simCloth">
+              <record> <!-- hclToolNamedObjectReference -->
+                <field name="pluginName"><string value="SetupDefaultSimCloth"/></field>
+                <field name="objectName"><string value="Simulation Cloth"/></field>
+                <field name="hash"><integer value="208447677"/></field>
+              </record>
+            </field>
+          </record>
+        </array>
+      </field>
+    </record>
+  </object>
+  <type id="type43">
+    <name value="hctClothSetupDefaultSimClothOptions"/>
+    <format value="7"/> <!-- record -->
+    <version value="2"/>
+    <fields count="16">
+      <field name="name" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="simMesh" typeid="type17" flags="32" /> <!-- hclToolNamedObjectReference -->
+      <field name="gravity" typeid="type44" flags="32" /> <!-- hkVector4 -->
+      <field name="globalDamping" typeid="type30" flags="32" /> <!-- hkReal -->
+      <field name="enableMidPhase" typeid="type29" flags="32" /> <!-- hkBool -->
+      <field name="doNormals" typeid="type29" flags="32" /> <!-- hkBool -->
+      <field name="fixedParticles" typeid="type31" flags="32" /> <!-- hclVertexSelectionInput -->
+      <field name="constraintsOptions" typeid="type45" flags="32" /> <!-- hctClothSetupDefaultSimClothConstraintsOptions -->
+      <field name="collisionOptions" typeid="type46" flags="32" /> <!-- hctClothSetupDefaultSimClothCollisionOptions -->
+      <field name="pinchDetectionOptions" typeid="type47" flags="32" /> <!-- hctClothSetupDefaultSimClothPinchDetectionOptions -->
+      <field name="constraints" typeid="type48" flags="32" /> <!-- hkArray< hclToolNamedObjectReference, hkContainerHeapAllocator > -->
+      <field name="collidables" typeid="type49" flags="32" /> <!-- hkArray< hctClothSetupDefaultSimClothCollidableOptions, hkContainerHeapAllocator > -->
+      <field name="landscapeCollisionOptions" typeid="type50" flags="32" /> <!-- hctClothSetupDefaultSimClothLandscapeOptions -->
+      <field name="transferMotionOptions" typeid="type51" flags="32" /> <!-- hctClothSetupDefaultSimClothTransferMotionOptions -->
+      <field name="actionOptions" typeid="type52" flags="32" /> <!-- hctClothSetupDefaultSimClothActionOptions -->
+      <field name="virtualCollisionPointsOptions" typeid="type53" flags="32" /> <!-- hctClothSetupDefaultSimClothVirtualCollisionPointsOptions -->
+    </fields>
+  </type>
+  <type id="type44">
+    <name value="hkVector4"/>
+    <parent id="type54" /> <!-- hkVector4f -->
+  </type>
+  <type id="type45">
+    <name value="hctClothSetupDefaultSimClothConstraintsOptions"/>
+    <format value="7"/> <!-- record -->
+    <version value="0"/>
+    <fields count="3">
+      <field name="specifyDensity" typeid="type29" flags="32" /> <!-- hkBool -->
+      <field name="vertexDensity" typeid="type55" flags="32" /> <!-- hclVertexFloatInput -->
+      <field name="particleMass" typeid="type55" flags="32" /> <!-- hclVertexFloatInput -->
+    </fields>
+  </type>
+  <type id="type46">
+    <name value="hctClothSetupDefaultSimClothCollisionOptions"/>
+    <format value="7"/> <!-- record -->
+    <version value="0"/>
+    <fields count="4">
+      <field name="particleRadius" typeid="type55" flags="32" /> <!-- hclVertexFloatInput -->
+      <field name="particleFriction" typeid="type55" flags="32" /> <!-- hclVertexFloatInput -->
+      <field name="collidableTransformSet" typeid="type17" flags="32" /> <!-- hclToolNamedObjectReference -->
+      <field name="driveCollidables" typeid="type29" flags="32" /> <!-- hkBool -->
+    </fields>
+  </type>
+  <type id="type47">
+    <name value="hctClothSetupDefaultSimClothPinchDetectionOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="6">
+      <field name="enablePinchDetection" typeid="type29" flags="32" /> <!-- hkBool -->
+      <field name="pinchDetectionEnabledParticles" typeid="type31" flags="32" /> <!-- hclVertexSelectionInput -->
+      <field name="driveToRefMesh" typeid="type29" flags="32" /> <!-- hkBool -->
+      <field name="driveRefMesh" typeid="type17" flags="32" /> <!-- hclToolNamedObjectReference -->
+      <field name="simToAnimPeriod" typeid="type30" flags="32" /> <!-- hkReal -->
+      <field name="animToSimPeriod" typeid="type30" flags="32" /> <!-- hkReal -->
+    </fields>
+  </type>
+  <type id="type48">
+    <name value="hkArray"/>
+    <format value="8"/> <!-- array -->
+    <subtype id="type17" /> <!-- hclToolNamedObjectReference -->
+    <parameters count="2">
+      <typeparam id="type17" /> <!-- hclToolNamedObjectReference -->
+      <typeparam id="type6" /> <!-- hkContainerHeapAllocator -->
+    </parameters>
+    <flags value="0"/>
+    <fields count="3">
+      <field name="m_data" typeid="type7" flags="34" /> <!-- T*< void > -->
+      <field name="m_size" typeid="type8" flags="34" /> <!-- int -->
+      <field name="m_capacityAndFlags" typeid="type8" flags="34" /> <!-- int -->
+    </fields>
+  </type>
+  <type id="type49">
+    <name value="hkArray"/>
+    <format value="8"/> <!-- array -->
+    <subtype id="type56" /> <!-- hctClothSetupDefaultSimClothCollidableOptions -->
+    <parameters count="2">
+      <typeparam id="type56" /> <!-- hctClothSetupDefaultSimClothCollidableOptions -->
+      <typeparam id="type6" /> <!-- hkContainerHeapAllocator -->
+    </parameters>
+    <flags value="0"/>
+    <fields count="3">
+      <field name="m_data" typeid="type7" flags="34" /> <!-- T*< void > -->
+      <field name="m_size" typeid="type8" flags="34" /> <!-- int -->
+      <field name="m_capacityAndFlags" typeid="type8" flags="34" /> <!-- int -->
+    </fields>
+  </type>
+  <type id="type50">
+    <name value="hctClothSetupDefaultSimClothLandscapeOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="8">
+      <field name="particlesSelection" typeid="type31" flags="32" /> <!-- hclVertexSelectionInput -->
+      <field name="particleRadius" typeid="type55" flags="32" /> <!-- hclVertexFloatInput -->
+      <field name="collisionTolerance" typeid="type55" flags="32" /> <!-- hclVertexFloatInput -->
+      <field name="pinchRadius" typeid="type55" flags="32" /> <!-- hclVertexFloatInput -->
+      <field name="enableStuckParticleDetection" typeid="type29" flags="32" /> <!-- hkBool -->
+      <field name="stuckParticlesStretchFactor" typeid="type30" flags="32" /> <!-- hkReal -->
+      <field name="enablePinchDetection" typeid="type29" flags="32" /> <!-- hkBool -->
+      <field name="pinchPriority" typeid="type38" flags="32" /> <!-- hkUint8 -->
+    </fields>
+  </type>
+  <type id="type51">
+    <name value="hctClothSetupDefaultSimClothTransferMotionOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="13">
+      <field name="transformSet" typeid="type17" flags="32" /> <!-- hclToolNamedObjectReference -->
+      <field name="boneName" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="enableTransferMotion" typeid="type29" flags="32" /> <!-- hkBool -->
+      <field name="enableTranslationTransfer" typeid="type29" flags="32" /> <!-- hkBool -->
+      <field name="enableRotationTransfer" typeid="type29" flags="32" /> <!-- hkBool -->
+      <field name="minTranslationSpeed" typeid="type30" flags="32" /> <!-- hkReal -->
+      <field name="maxTranslationSpeed" typeid="type30" flags="32" /> <!-- hkReal -->
+      <field name="minTranslationBlend" typeid="type30" flags="32" /> <!-- hkReal -->
+      <field name="maxTranslationBlend" typeid="type30" flags="32" /> <!-- hkReal -->
+      <field name="minRotationSpeed" typeid="type30" flags="32" /> <!-- hkReal -->
+      <field name="maxRotationSpeed" typeid="type30" flags="32" /> <!-- hkReal -->
+      <field name="minRotationBlend" typeid="type30" flags="32" /> <!-- hkReal -->
+      <field name="maxRotationBlend" typeid="type30" flags="32" /> <!-- hkReal -->
+    </fields>
+  </type>
+  <type id="type52">
+    <name value="hctClothSetupDefaultSimClothActionOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="2">
+      <field name="rescaleMass" typeid="type29" flags="32" /> <!-- hkBool -->
+      <field name="totalMass" typeid="type30" flags="32" /> <!-- hkReal -->
+    </fields>
+  </type>
+  <type id="type53">
+    <name value="hctClothSetupDefaultSimClothVirtualCollisionPointsOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="6">
+      <field name="collidableParticleSelection" typeid="type31" flags="32" /> <!-- hclVertexSelectionInput -->
+      <field name="collidableParticleLOD" typeid="type55" flags="32" /> <!-- hclVertexFloatInput -->
+      <field name="collisionType" typeid="type57" flags="32" /> <!-- hkEnum< hctClothSetupDefaultSimClothVirtualCollisionPointsOptions::VCPCollisionType, hkUint8 > -->
+      <field name="collidables" typeid="type58" flags="32" /> <!-- hkArray< hkStringPtr, hkContainerHeapAllocator > -->
+      <field name="landscapeParticleSelection" typeid="type31" flags="32" /> <!-- hclVertexSelectionInput -->
+      <field name="landscapeParticleLOD" typeid="type55" flags="32" /> <!-- hclVertexFloatInput -->
+    </fields>
+  </type>
+  <type id="type54">
+    <name value="hkVector4f"/>
+    <format value="1064"/> <!-- array(4) -->
+    <subtype id="type32" /> <!-- float -->
+  </type>
+  <type id="type55">
+    <name value="hclVertexFloatInput"/>
+    <format value="7"/> <!-- record -->
+    <version value="1"/>
+    <fields count="6">
+      <field name="type" typeid="type59" flags="32" /> <!-- hkEnum< hclVertexFloatInput::VertexFloatType, hkUint32 > -->
+      <field name="constantValue" typeid="type30" flags="32" /> <!-- hkReal -->
+      <field name="channelName" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="overrideScale" typeid="type29" flags="32" /> <!-- hkBool -->
+      <field name="overrideScaleMin" typeid="type30" flags="32" /> <!-- hkReal -->
+      <field name="overrideScaleMax" typeid="type30" flags="32" /> <!-- hkReal -->
+    </fields>
+  </type>
+  <type id="type56">
+    <name value="hctClothSetupDefaultSimClothCollidableOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="6">
+      <field name="name" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="particlesSelection" typeid="type31" flags="32" /> <!-- hclVertexSelectionInput -->
+      <field name="drivingBoneName" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="enablePinchDetection" typeid="type29" flags="32" /> <!-- hkBool -->
+      <field name="pinchPriority" typeid="type38" flags="32" /> <!-- hkUint8 -->
+      <field name="pinchRadius" typeid="type30" flags="32" /> <!-- hkReal -->
+    </fields>
+  </type>
+  <type id="type57">
+    <name value="hkEnum"/>
+    <format value="8196"/> <!-- uint8 (LE) -->
+    <parameters count="2">
+      <typeparam id="type60" /> <!-- hctClothSetupDefaultSimClothVirtualCollisionPointsOptions::VCPCollisionType -->
+      <typeparam id="type38" /> <!-- hkUint8 -->
+    </parameters>
+    <fields count="1">
+      <field name="storage" typeid="type38" flags="36" /> <!-- hkUint8 -->
+    </fields>
+  </type>
+  <type id="type58">
+    <name value="hkArray"/>
+    <format value="8"/> <!-- array -->
+    <subtype id="type11" /> <!-- hkStringPtr -->
+    <parameters count="2">
+      <typeparam id="type11" /> <!-- hkStringPtr -->
+      <typeparam id="type6" /> <!-- hkContainerHeapAllocator -->
+    </parameters>
+    <flags value="0"/>
+    <fields count="3">
+      <field name="m_data" typeid="type7" flags="34" /> <!-- T*< void > -->
+      <field name="m_size" typeid="type8" flags="34" /> <!-- int -->
+      <field name="m_capacityAndFlags" typeid="type8" flags="34" /> <!-- int -->
+    </fields>
+  </type>
+  <type id="type59">
+    <name value="hkEnum"/>
+    <format value="32772"/> <!-- uint32 (LE) -->
+    <parameters count="2">
+      <typeparam id="type61" /> <!-- hclVertexFloatInput::VertexFloatType -->
+      <typeparam id="type19" /> <!-- hkUint32 -->
+    </parameters>
+    <fields count="1">
+      <field name="storage" typeid="type19" flags="36" /> <!-- hkUint32 -->
+    </fields>
+  </type>
+  <type id="type60">
+    <name value="hctClothSetupDefaultSimClothVirtualCollisionPointsOptions::VCPCollisionType"/>
+    <format value="33284"/> <!-- int32 (LE) -->
+  </type>
+  <type id="type61">
+    <name value="hclVertexFloatInput::VertexFloatType"/>
+    <format value="33284"/> <!-- int32 (LE) -->
+  </type>
+  <object id="object8" typeid="type16" > <!-- hctClothSetupObjectData -->
+    <record> <!-- hctClothSetupObjectData -->
+      <field name="ref">
+        <record> <!-- hclToolNamedObjectReference -->
+          <field name="pluginName"><string value="SetupDefaultSimCloth"/></field>
+          <field name="objectName"><string value="Simulation Cloth"/></field>
+          <field name="hash"><integer value="208447677"/></field>
+        </record>
+      </field>
+      <field name="options">
+        <array count="1" elementtypeid="type43"> <!-- ArrayOf hctClothSetupDefaultSimClothOptions -->
+          <record> <!-- hctClothSetupDefaultSimClothOptions -->
+            <field name="name"><string value="Simulation Cloth"/></field>
+            <field name="simMesh">
+              <record> <!-- hclToolNamedObjectReference -->
+                <field name="pluginName"><string value="SetupSimMesh"/></field>
+                <field name="objectName"><string value="SimSkirt SimMesh"/></field>
+                <field name="hash"><integer value="1675554456"/></field>
+              </record>
+            </field>
+            <field name="gravity">
+              <array count="4" elementtypeid="type32"> <!-- ArrayOf float -->
+                <real dec="0" hex="#0"/>
+                <real dec="0" hex="#0"/>
+                <real dec="-9.81" hex="#c0239eb860000000"/>
+                <real dec="0" hex="#0"/>
+              </array>
+            </field>
+            <field name="globalDamping"><real dec="0.9" hex="#3fecccccc0000000"/></field>
+            <field name="enableMidPhase"><bool value="false"/></field>
+            <field name="doNormals"><bool value="false"/></field>
+            <field name="fixedParticles">
+              <record> <!-- hclVertexSelectionInput -->
+                <field name="type"><integer value="1"/><!-- VERTEX_SELECTION_NONE --></field>
+                <field name="channelName"><string/></field>
+              </record>
+            </field>
+            <field name="constraintsOptions">
+              <record> <!-- hctClothSetupDefaultSimClothConstraintsOptions -->
+                <field name="specifyDensity"><bool value="false"/></field>
+                <field name="vertexDensity">
+                  <record> <!-- hclVertexFloatInput -->
+                    <field name="type"><integer value="0"/><!-- VERTEX_FLOAT_CONSTANT --></field>
+                    <field name="constantValue"><real dec="0" hex="#0"/></field>
+                    <field name="channelName"><string/></field>
+                    <field name="overrideScale"><bool value="false"/></field>
+                    <field name="overrideScaleMin"><real dec="0" hex="#0"/></field>
+                    <field name="overrideScaleMax"><real dec="0" hex="#0"/></field>
+                  </record>
+                </field>
+                <field name="particleMass">
+                  <record> <!-- hclVertexFloatInput -->
+                    <field name="type"><integer value="0"/><!-- VERTEX_FLOAT_CONSTANT --></field>
+                    <field name="constantValue"><real dec="0.01" hex="#3f847ae140000000"/></field>
+                    <field name="channelName"><string/></field>
+                    <field name="overrideScale"><bool value="false"/></field>
+                    <field name="overrideScaleMin"><real dec="0" hex="#0"/></field>
+                    <field name="overrideScaleMax"><real dec="1" hex="#3ff0000000000000"/></field>
+                  </record>
+                </field>
+              </record>
+            </field>
+            <field name="collisionOptions">
+              <record> <!-- hctClothSetupDefaultSimClothCollisionOptions -->
+                <field name="particleRadius">
+                  <record> <!-- hclVertexFloatInput -->
+                    <field name="type"><integer value="0"/><!-- VERTEX_FLOAT_CONSTANT --></field>
+                    <field name="constantValue"><real dec="0.002" hex="#3f60624de0000000"/></field>
+                    <field name="channelName"><string/></field>
+                    <field name="overrideScale"><bool value="false"/></field>
+                    <field name="overrideScaleMin"><real dec="0" hex="#0"/></field>
+                    <field name="overrideScaleMax"><real dec="1" hex="#3ff0000000000000"/></field>
+                  </record>
+                </field>
+                <field name="particleFriction">
+                  <record> <!-- hclVertexFloatInput -->
+                    <field name="type"><integer value="0"/><!-- VERTEX_FLOAT_CONSTANT --></field>
+                    <field name="constantValue"><real dec="0.5" hex="#3fe0000000000000"/></field>
+                    <field name="channelName"><string/></field>
+                    <field name="overrideScale"><bool value="false"/></field>
+                    <field name="overrideScaleMin"><real dec="0" hex="#0"/></field>
+                    <field name="overrideScaleMax"><real dec="0" hex="#0"/></field>
+                  </record>
+                </field>
+                <field name="collidableTransformSet">
+                  <record> <!-- hclToolNamedObjectReference -->
+                    <field name="pluginName"><string value="SetupSkeletalXformSet"/></field>
+                    <field name="objectName"><string value="Root TransformSet"/></field>
+                    <field name="hash"><integer value="1501834895"/></field>
+                  </record>
+                </field>
+                <field name="driveCollidables"><bool value="true"/></field>
+              </record>
+            </field>
+            <field name="pinchDetectionOptions">
+              <record> <!-- hctClothSetupDefaultSimClothPinchDetectionOptions -->
+                <field name="enablePinchDetection"><bool value="false"/></field>
+                <field name="pinchDetectionEnabledParticles">
+                  <record> <!-- hclVertexSelectionInput -->
+                    <field name="type"><integer value="1"/><!-- VERTEX_SELECTION_NONE --></field>
+                    <field name="channelName"><string/></field>
+                  </record>
+                </field>
+                <field name="driveToRefMesh"><bool value="false"/></field>
+                <field name="driveRefMesh">
+                  <record> <!-- hclToolNamedObjectReference -->
+                    <field name="pluginName"><string/></field>
+                    <field name="objectName"><string/></field>
+                    <field name="hash"><integer value="4294967295"/></field>
+                  </record>
+                </field>
+                <field name="simToAnimPeriod"><real dec="1" hex="#3ff0000000000000"/></field>
+                <field name="animToSimPeriod"><real dec="0.25" hex="#3fd0000000000000"/></field>
+              </record>
+            </field>
+            <field name="constraints">
+              <array count="3" elementtypeid="type17"> <!-- ArrayOf hclToolNamedObjectReference -->
+                <record> <!-- hclToolNamedObjectReference -->
+                  <field name="pluginName"><string value="SetupConstraintSetStandardLink"/></field>
+                  <field name="objectName"><string value="Standard Link Constraint"/></field>
+                  <field name="hash"><integer value="591988394"/></field>
+                </record>
+                <record> <!-- hclToolNamedObjectReference -->
+                  <field name="pluginName"><string value="SetupConstraintSetStretchLink"/></field>
+                  <field name="objectName"><string value="StretchLink Constraint"/></field>
+                  <field name="hash"><integer value="384936546"/></field>
+                </record>
+                <record> <!-- hclToolNamedObjectReference -->
+                  <field name="pluginName"><string value="SetupConstraintSetVolume"/></field>
+                  <field name="objectName"><string value="Volume Constraint"/></field>
+                  <field name="hash"><integer value="1640204700"/></field>
+                </record>
+              </array>
+            </field>
+            <field name="collidables">
+              <array count="0" elementtypeid="type56"> <!-- ArrayOf hctClothSetupDefaultSimClothCollidableOptions -->
+              </array>
+            </field>
+            <field name="landscapeCollisionOptions">
+              <record> <!-- hctClothSetupDefaultSimClothLandscapeOptions -->
+                <field name="particlesSelection">
+                  <record> <!-- hclVertexSelectionInput -->
+                    <field name="type"><integer value="1"/><!-- VERTEX_SELECTION_NONE --></field>
+                    <field name="channelName"><string/></field>
+                  </record>
+                </field>
+                <field name="particleRadius">
+                  <record> <!-- hclVertexFloatInput -->
+                    <field name="type"><integer value="0"/><!-- VERTEX_FLOAT_CONSTANT --></field>
+                    <field name="constantValue"><real dec="0" hex="#0"/></field>
+                    <field name="channelName"><string/></field>
+                    <field name="overrideScale"><bool value="false"/></field>
+                    <field name="overrideScaleMin"><real dec="0" hex="#0"/></field>
+                    <field name="overrideScaleMax"><real dec="0" hex="#0"/></field>
+                  </record>
+                </field>
+                <field name="collisionTolerance">
+                  <record> <!-- hclVertexFloatInput -->
+                    <field name="type"><integer value="0"/><!-- VERTEX_FLOAT_CONSTANT --></field>
+                    <field name="constantValue"><real dec="0.2" hex="#3fc99999a0000000"/></field>
+                    <field name="channelName"><string/></field>
+                    <field name="overrideScale"><bool value="false"/></field>
+                    <field name="overrideScaleMin"><real dec="0" hex="#0"/></field>
+                    <field name="overrideScaleMax"><real dec="0" hex="#0"/></field>
+                  </record>
+                </field>
+                <field name="pinchRadius">
+                  <record> <!-- hclVertexFloatInput -->
+                    <field name="type"><integer value="0"/><!-- VERTEX_FLOAT_CONSTANT --></field>
+                    <field name="constantValue"><real dec="0.1" hex="#3fb99999a0000000"/></field>
+                    <field name="channelName"><string/></field>
+                    <field name="overrideScale"><bool value="false"/></field>
+                    <field name="overrideScaleMin"><real dec="0" hex="#0"/></field>
+                    <field name="overrideScaleMax"><real dec="0" hex="#0"/></field>
+                  </record>
+                </field>
+                <field name="enableStuckParticleDetection"><bool value="false"/></field>
+                <field name="stuckParticlesStretchFactor"><real dec="3" hex="#4008000000000000"/></field>
+                <field name="enablePinchDetection"><bool value="false"/></field>
+                <field name="pinchPriority"><integer value="0"/></field>
+              </record>
+            </field>
+            <field name="transferMotionOptions">
+              <record> <!-- hctClothSetupDefaultSimClothTransferMotionOptions -->
+                <field name="transformSet">
+                  <record> <!-- hclToolNamedObjectReference -->
+                    <field name="pluginName"><string value="SetupSkeletalXformSet"/></field>
+                    <field name="objectName"><string value="Root TransformSet"/></field>
+                    <field name="hash"><integer value="1501834895"/></field>
+                  </record>
+                </field>
+                <field name="boneName"><string value="C_Hips"/></field>
+                <field name="enableTransferMotion"><bool value="false"/></field>
+                <field name="enableTranslationTransfer"><bool value="false"/></field>
+                <field name="enableRotationTransfer"><bool value="false"/></field>
+                <field name="minTranslationSpeed"><real dec="0" hex="#0"/></field>
+                <field name="maxTranslationSpeed"><real dec="0" hex="#0"/></field>
+                <field name="minTranslationBlend"><real dec="0" hex="#0"/></field>
+                <field name="maxTranslationBlend"><real dec="1" hex="#3ff0000000000000"/></field>
+                <field name="minRotationSpeed"><real dec="0" hex="#0"/></field>
+                <field name="maxRotationSpeed"><real dec="0" hex="#0"/></field>
+                <field name="minRotationBlend"><real dec="0" hex="#0"/></field>
+                <field name="maxRotationBlend"><real dec="1" hex="#3ff0000000000000"/></field>
+              </record>
+            </field>
+            <field name="actionOptions">
+              <record> <!-- hctClothSetupDefaultSimClothActionOptions -->
+                <field name="rescaleMass"><bool value="false"/></field>
+                <field name="totalMass"><real dec="1" hex="#3ff0000000000000"/></field>
+              </record>
+            </field>
+            <field name="virtualCollisionPointsOptions">
+              <record> <!-- hctClothSetupDefaultSimClothVirtualCollisionPointsOptions -->
+                <field name="collidableParticleSelection">
+                  <record> <!-- hclVertexSelectionInput -->
+                    <field name="type"><integer value="1"/><!-- VERTEX_SELECTION_NONE --></field>
+                    <field name="channelName"><string/></field>
+                  </record>
+                </field>
+                <field name="collidableParticleLOD">
+                  <record> <!-- hclVertexFloatInput -->
+                    <field name="type"><integer value="0"/><!-- VERTEX_FLOAT_CONSTANT --></field>
+                    <field name="constantValue"><real dec="2" hex="#4000000000000000"/></field>
+                    <field name="channelName"><string/></field>
+                    <field name="overrideScale"><bool value="false"/></field>
+                    <field name="overrideScaleMin"><real dec="0" hex="#0"/></field>
+                    <field name="overrideScaleMax"><real dec="0" hex="#0"/></field>
+                  </record>
+                </field>
+                <field name="collisionType"><integer value="248"/></field>
+                <field name="collidables">
+                  <array count="0" elementtypeid="type11"> <!-- ArrayOf hkStringPtr -->
+                  </array>
+                </field>
+                <field name="landscapeParticleSelection">
+                  <record> <!-- hclVertexSelectionInput -->
+                    <field name="type"><integer value="1"/><!-- VERTEX_SELECTION_NONE --></field>
+                    <field name="channelName"><string/></field>
+                  </record>
+                </field>
+                <field name="landscapeParticleLOD">
+                  <record> <!-- hclVertexFloatInput -->
+                    <field name="type"><integer value="0"/><!-- VERTEX_FLOAT_CONSTANT --></field>
+                    <field name="constantValue"><real dec="2" hex="#4000000000000000"/></field>
+                    <field name="channelName"><string/></field>
+                    <field name="overrideScale"><bool value="false"/></field>
+                    <field name="overrideScaleMin"><real dec="0" hex="#0"/></field>
+                    <field name="overrideScaleMax"><real dec="0" hex="#0"/></field>
+                  </record>
+                </field>
+              </record>
+            </field>
+          </record>
+        </array>
+      </field>
+    </record>
+  </object>
+  <type id="type62">
+    <name value="hctClothSetupMoveParticlesOperatorOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="3">
+      <field name="name" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="simCloth" typeid="type17" flags="32" /> <!-- hclToolNamedObjectReference -->
+      <field name="displayBuffer" typeid="type17" flags="32" /> <!-- hclToolNamedObjectReference -->
+    </fields>
+  </type>
+  <object id="object9" typeid="type16" > <!-- hctClothSetupObjectData -->
+    <record> <!-- hctClothSetupObjectData -->
+      <field name="ref">
+        <record> <!-- hclToolNamedObjectReference -->
+          <field name="pluginName"><string value="SetupOperatorMoveParticles"/></field>
+          <field name="objectName"><string value="Move Particles"/></field>
+          <field name="hash"><integer value="1838379646"/></field>
+        </record>
+      </field>
+      <field name="options">
+        <array count="1" elementtypeid="type62"> <!-- ArrayOf hctClothSetupMoveParticlesOperatorOptions -->
+          <record> <!-- hctClothSetupMoveParticlesOperatorOptions -->
+            <field name="name"><string value="Move Particles"/></field>
+            <field name="simCloth">
+              <record> <!-- hclToolNamedObjectReference -->
+                <field name="pluginName"><string value="SetupDefaultSimCloth"/></field>
+                <field name="objectName"><string value="Simulation Cloth"/></field>
+                <field name="hash"><integer value="208447677"/></field>
+              </record>
+            </field>
+            <field name="displayBuffer">
+              <record> <!-- hclToolNamedObjectReference -->
+                <field name="pluginName"><string value="SetupScratchBuffer"/></field>
+                <field name="objectName"><string value="Sim Scratch"/></field>
+                <field name="hash"><integer value="974418409"/></field>
+              </record>
+            </field>
+          </record>
+        </array>
+      </field>
+    </record>
+  </object>
+  <type id="type63">
+    <name value="hctClothSetupSimulateOperatorOptions"/>
+    <format value="7"/> <!-- record -->
+    <version value="1"/>
+    <fields count="3">
+      <field name="name" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="simCloth" typeid="type17" flags="32" /> <!-- hclToolNamedObjectReference -->
+      <field name="simOpConfigs" typeid="type64" flags="32" /> <!-- hkArray< hctClothSetupSimulateOperatorConfigOptions, hkContainerHeapAllocator > -->
+    </fields>
+  </type>
+  <type id="type64">
+    <name value="hkArray"/>
+    <format value="8"/> <!-- array -->
+    <subtype id="type65" /> <!-- hctClothSetupSimulateOperatorConfigOptions -->
+    <parameters count="2">
+      <typeparam id="type65" /> <!-- hctClothSetupSimulateOperatorConfigOptions -->
+      <typeparam id="type6" /> <!-- hkContainerHeapAllocator -->
+    </parameters>
+    <flags value="0"/>
+    <fields count="3">
+      <field name="m_data" typeid="type7" flags="34" /> <!-- T*< void > -->
+      <field name="m_size" typeid="type8" flags="34" /> <!-- int -->
+      <field name="m_capacityAndFlags" typeid="type8" flags="34" /> <!-- int -->
+    </fields>
+  </type>
+  <type id="type65">
+    <name value="hctClothSetupSimulateOperatorConfigOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="9">
+      <field name="name" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="numberOfSubsteps" typeid="type19" flags="32" /> <!-- hkUint32 -->
+      <field name="executionOrder" typeid="type66" flags="32" /> <!-- hkEnum< hctClothSetupSimulateOperatorConfigOptions::ExecutionOrder, hkUint8 > -->
+      <field name="simpleIterations" typeid="type19" flags="32" /> <!-- hkUint32 -->
+      <field name="smartComplexity" typeid="type19" flags="32" /> <!-- hkUint32 -->
+      <field name="manualExecutionOrder" typeid="type48" flags="32" /> <!-- hkArray< hclToolNamedObjectReference, hkContainerHeapAllocator > -->
+      <field name="adaptConstraintStiffness" typeid="type29" flags="32" /> <!-- hkBool -->
+      <field name="collisionType" typeid="type67" flags="32" /> <!-- hkEnum< hctClothSetupSimulateOperatorConfigOptions::CollisionType, hkUint8 > -->
+      <field name="collidables" typeid="type58" flags="32" /> <!-- hkArray< hkStringPtr, hkContainerHeapAllocator > -->
+    </fields>
+  </type>
+  <type id="type66">
+    <name value="hkEnum"/>
+    <format value="8196"/> <!-- uint8 (LE) -->
+    <parameters count="2">
+      <typeparam id="type68" /> <!-- hctClothSetupSimulateOperatorConfigOptions::ExecutionOrder -->
+      <typeparam id="type38" /> <!-- hkUint8 -->
+    </parameters>
+    <fields count="1">
+      <field name="storage" typeid="type38" flags="36" /> <!-- hkUint8 -->
+    </fields>
+  </type>
+  <type id="type67">
+    <name value="hkEnum"/>
+    <format value="8196"/> <!-- uint8 (LE) -->
+    <parameters count="2">
+      <typeparam id="type69" /> <!-- hctClothSetupSimulateOperatorConfigOptions::CollisionType -->
+      <typeparam id="type38" /> <!-- hkUint8 -->
+    </parameters>
+    <fields count="1">
+      <field name="storage" typeid="type38" flags="36" /> <!-- hkUint8 -->
+    </fields>
+  </type>
+  <type id="type68">
+    <name value="hctClothSetupSimulateOperatorConfigOptions::ExecutionOrder"/>
+    <format value="33284"/> <!-- int32 (LE) -->
+  </type>
+  <type id="type69">
+    <name value="hctClothSetupSimulateOperatorConfigOptions::CollisionType"/>
+    <format value="33284"/> <!-- int32 (LE) -->
+  </type>
+  <object id="object10" typeid="type16" > <!-- hctClothSetupObjectData -->
+    <record> <!-- hctClothSetupObjectData -->
+      <field name="ref">
+        <record> <!-- hclToolNamedObjectReference -->
+          <field name="pluginName"><string value="SetupOperatorSimulate"/></field>
+          <field name="objectName"><string value="Sim"/></field>
+          <field name="hash"><integer value="661916367"/></field>
+        </record>
+      </field>
+      <field name="options">
+        <array count="1" elementtypeid="type63"> <!-- ArrayOf hctClothSetupSimulateOperatorOptions -->
+          <record> <!-- hctClothSetupSimulateOperatorOptions -->
+            <field name="name"><string value="Sim"/></field>
+            <field name="simCloth">
+              <record> <!-- hclToolNamedObjectReference -->
+                <field name="pluginName"><string value="SetupDefaultSimCloth"/></field>
+                <field name="objectName"><string value="Simulation Cloth"/></field>
+                <field name="hash"><integer value="208447677"/></field>
+              </record>
+            </field>
+            <field name="simOpConfigs">
+              <array count="1" elementtypeid="type65"> <!-- ArrayOf hctClothSetupSimulateOperatorConfigOptions -->
+                <record> <!-- hctClothSetupSimulateOperatorConfigOptions -->
+                  <field name="name"><string value="Default Config"/></field>
+                  <field name="numberOfSubsteps"><integer value="1"/></field>
+                  <field name="executionOrder"><integer value="0"/><!-- EO_MANUAL --></field>
+                  <field name="simpleIterations"><integer value="5"/></field>
+                  <field name="smartComplexity"><integer value="1"/></field>
+                  <field name="manualExecutionOrder">
+                    <array count="4" elementtypeid="type17"> <!-- ArrayOf hclToolNamedObjectReference -->
+                      <record> <!-- hclToolNamedObjectReference -->
+                        <field name="pluginName"><string value="SetupConstraintSetStandardLink"/></field>
+                        <field name="objectName"><string value="Standard Link Constraint"/></field>
+                        <field name="hash"><integer value="591988394"/></field>
+                      </record>
+                      <record> <!-- hclToolNamedObjectReference -->
+                        <field name="pluginName"><string value="SetupConstraintSetStretchLink"/></field>
+                        <field name="objectName"><string value="StretchLink Constraint"/></field>
+                        <field name="hash"><integer value="384936546"/></field>
+                      </record>
+                      <record> <!-- hclToolNamedObjectReference -->
+                        <field name="pluginName"><string value="SetupConstraintSetVolume"/></field>
+                        <field name="objectName"><string value="Volume Constraint"/></field>
+                        <field name="hash"><integer value="1640204700"/></field>
+                      </record>
+                      <record> <!-- hclToolNamedObjectReference -->
+                        <field name="pluginName"><string/></field>
+                        <field name="objectName"><string/></field>
+                        <field name="hash"><integer value="5381"/></field>
+                      </record>
+                    </array>
+                  </field>
+                  <field name="adaptConstraintStiffness"><bool value="false"/></field>
+                  <field name="collisionType"><integer value="0"/><!-- ALL_COLLIDABLES --></field>
+                  <field name="collidables">
+                    <array count="0" elementtypeid="type11"> <!-- ArrayOf hkStringPtr -->
+                    </array>
+                  </field>
+                </record>
+              </array>
+            </field>
+          </record>
+        </array>
+      </field>
+    </record>
+  </object>
+  <type id="type70">
+    <name value="hctClothSetupMeshBoneOperatorOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="7">
+      <field name="name" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="inputBufferSetupObject" typeid="type17" flags="32" /> <!-- hclToolNamedObjectReference -->
+      <field name="inputTriangleSelection" typeid="type71" flags="32" /> <!-- hclTriangleSelectionInput -->
+      <field name="outputTransformSetSetupObject" typeid="type17" flags="32" /> <!-- hclToolNamedObjectReference -->
+      <field name="deformedBones" typeid="type58" flags="32" /> <!-- hkArray< hkStringPtr, hkContainerHeapAllocator > -->
+      <field name="maxTrianglesPerBone" typeid="type19" flags="32" /> <!-- hkUint32 -->
+      <field name="minimumTriangleWeight" typeid="type30" flags="32" /> <!-- hkReal -->
+    </fields>
+  </type>
+  <type id="type71">
+    <name value="hclTriangleSelectionInput"/>
+    <format value="7"/> <!-- record -->
+    <fields count="2">
+      <field name="type" typeid="type72" flags="32" /> <!-- hkEnum< hclTriangleSelectionInput::TriangleSelectionType, hkUint32 > -->
+      <field name="channelName" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+    </fields>
+  </type>
+  <type id="type72">
+    <name value="hkEnum"/>
+    <format value="32772"/> <!-- uint32 (LE) -->
+    <parameters count="2">
+      <typeparam id="type73" /> <!-- hclTriangleSelectionInput::TriangleSelectionType -->
+      <typeparam id="type19" /> <!-- hkUint32 -->
+    </parameters>
+    <fields count="1">
+      <field name="storage" typeid="type19" flags="36" /> <!-- hkUint32 -->
+    </fields>
+  </type>
+  <type id="type73">
+    <name value="hclTriangleSelectionInput::TriangleSelectionType"/>
+    <format value="33284"/> <!-- int32 (LE) -->
+  </type>
+  <object id="object11" typeid="type16" > <!-- hctClothSetupObjectData -->
+    <record> <!-- hctClothSetupObjectData -->
+      <field name="ref">
+        <record> <!-- hclToolNamedObjectReference -->
+          <field name="pluginName"><string value="SetupOperatorMeshBone"/></field>
+          <field name="objectName"><string value="Deform"/></field>
+          <field name="hash"><integer value="807565104"/></field>
+        </record>
+      </field>
+      <field name="options">
+        <array count="1" elementtypeid="type70"> <!-- ArrayOf hctClothSetupMeshBoneOperatorOptions -->
+          <record> <!-- hctClothSetupMeshBoneOperatorOptions -->
+            <field name="name"><string value="Deform"/></field>
+            <field name="inputBufferSetupObject">
+              <record> <!-- hclToolNamedObjectReference -->
+                <field name="pluginName"><string value="SetupSimBuffer"/></field>
+                <field name="objectName"><string value="Sim Buf"/></field>
+                <field name="hash"><integer value="1032708095"/></field>
+              </record>
+            </field>
+            <field name="inputTriangleSelection">
+              <record> <!-- hclTriangleSelectionInput -->
+                <field name="type"><integer value="0"/><!-- TRIANGLE_SELECTION_ALL --></field>
+                <field name="channelName"><string/></field>
+              </record>
+            </field>
+            <field name="outputTransformSetSetupObject">
+              <record> <!-- hclToolNamedObjectReference -->
+                <field name="pluginName"><string value="SetupSkeletalXformSet"/></field>
+                <field name="objectName"><string value="Root TransformSet"/></field>
+                <field name="hash"><integer value="1501834895"/></field>
+              </record>
+            </field>
+            <field name="deformedBones">
+              <array count="136" elementtypeid="type11"> <!-- ArrayOf hkStringPtr -->
+                <string value="HairBone_192_193"/>
+                <string value="HairBone_172_173"/>
+                <string value="HairBone_160_161_002"/>
+                <string value="HairBone_156_157_001"/>
+                <string value="HairBone_152_153"/>
+                <string value="HairBone_148_149_002"/>
+                <string value="HairBone_144_145_001"/>
+                <string value="HairBone_140_141_001"/>
+                <string value="HairBone_136_137_002"/>
+                <string value="HairBone_132_133_002"/>
+                <string value="HairBone_128_129_002"/>
+                <string value="HairBone_124_125_002"/>
+                <string value="HairBone_120_121_002"/>
+                <string value="HairBone_116_117_002"/>
+                <string value="HairBone_112_113_002"/>
+                <string value="HairBone_108_109_002"/>
+                <string value="HairBone_104_105_002"/>
+                <string value="HairBone_100_101_002"/>
+                <string value="HairBone_160_161_001"/>
+                <string value="HairBone_156_157"/>
+                <string value="HairBone_150_151"/>
+                <string value="HairBone_148_149_001"/>
+                <string value="HairBone_146_147"/>
+                <string value="HairBone_144_145"/>
+                <string value="HairBone_142_143"/>
+                <string value="HairBone_140_141"/>
+                <string value="HairBone_138_139"/>
+                <string value="HairBone_136_137_001"/>
+                <string value="HairBone_134_135"/>
+                <string value="HairBone_132_133_001"/>
+                <string value="HairBone_130_131"/>
+                <string value="HairBone_128_129_001"/>
+                <string value="HairBone_126_127"/>
+                <string value="HairBone_124_125_001"/>
+                <string value="HairBone_122_123"/>
+                <string value="HairBone_120_121_001"/>
+                <string value="HairBone_118_119"/>
+                <string value="HairBone_116_117_001"/>
+                <string value="HairBone_114_115"/>
+                <string value="HairBone_112_113_001"/>
+                <string value="HairBone_110_111"/>
+                <string value="HairBone_108_109_001"/>
+                <string value="HairBone_106_107"/>
+                <string value="HairBone_104_105_001"/>
+                <string value="HairBone_102_103"/>
+                <string value="HairBone_160_161"/>
+                <string value="HairBone_148_149"/>
+                <string value="HairBone_136_137"/>
+                <string value="HairBone_132_133"/>
+                <string value="HairBone_128_129"/>
+                <string value="HairBone_124_125"/>
+                <string value="HairBone_120_121"/>
+                <string value="HairBone_116_117"/>
+                <string value="HairBone_112_113"/>
+                <string value="HairBone_108_109"/>
+                <string value="HairBone_104_105"/>
+                <string value="HairBone_100_101_001"/>
+                <string value="HairBone_96_97_001"/>
+                <string value="HairBone_92_93"/>
+                <string value="HairBone_88_89_001"/>
+                <string value="HairBone_84_85_001"/>
+                <string value="HairBone_0_1_001"/>
+                <string value="HairBone_20_21_001"/>
+                <string value="HairBone_32_33_001"/>
+                <string value="HairBone_36_37_001"/>
+                <string value="HairBone_40_41_001"/>
+                <string value="HairBone_44_45_001"/>
+                <string value="HairBone_48_49_001"/>
+                <string value="HairBone_52_53"/>
+                <string value="HairBone_56_57"/>
+                <string value="HairBone_60_61_001"/>
+                <string value="HairBone_64_65_001"/>
+                <string value="HairBone_68_69"/>
+                <string value="HairBone_72_73_001"/>
+                <string value="HairBone_76_77_001"/>
+                <string value="HairBone_80_81_001"/>
+                <string value="HairBone_84_85_002"/>
+                <string value="HairBone_88_89_002"/>
+                <string value="HairBone_92_93_001"/>
+                <string value="HairBone_58_59"/>
+                <string value="HairBone_54_55"/>
+                <string value="HairBone_48_49"/>
+                <string value="HairBone_46_47"/>
+                <string value="HairBone_44_45"/>
+                <string value="HairBone_42_43"/>
+                <string value="HairBone_40_41"/>
+                <string value="HairBone_38_39"/>
+                <string value="HairBone_36_37"/>
+                <string value="HairBone_34_35"/>
+                <string value="HairBone_32_33"/>
+                <string value="HairBone_30_31"/>
+                <string value="HairBone_28_29"/>
+                <string value="HairBone_26_27"/>
+                <string value="HairBone_24_25"/>
+                <string value="HairBone_22_23"/>
+                <string value="HairBone_20_21"/>
+                <string value="HairBone_18_19"/>
+                <string value="HairBone_16_17"/>
+                <string value="HairBone_14_15"/>
+                <string value="HairBone_12_13"/>
+                <string value="HairBone_10_11"/>
+                <string value="HairBone_8_9"/>
+                <string value="HairBone_6_7"/>
+                <string value="HairBone_4_5"/>
+                <string value="HairBone_2_3"/>
+                <string value="HairBone_0_1"/>
+                <string value="HairBone_0_1_002"/>
+                <string value="HairBone_12_13_001"/>
+                <string value="HairBone_24_25_001"/>
+                <string value="HairBone_28_29_001"/>
+                <string value="HairBone_32_33_002"/>
+                <string value="HairBone_36_37_002"/>
+                <string value="HairBone_40_41_002"/>
+                <string value="HairBone_44_45_002"/>
+                <string value="HairBone_48_49_002"/>
+                <string value="HairBone_52_53_001"/>
+                <string value="HairBone_56_57_001"/>
+                <string value="HairBone_60_61_002"/>
+                <string value="HairBone_64_65_002"/>
+                <string value="HairBone_68_69_001"/>
+                <string value="HairBone_72_73_002"/>
+                <string value="HairBone_76_77_002"/>
+                <string value="HairBone_60_61"/>
+                <string value="HairBone_64_65"/>
+                <string value="HairBone_70_71"/>
+                <string value="HairBone_72_73"/>
+                <string value="HairBone_74_75"/>
+                <string value="HairBone_76_77"/>
+                <string value="HairBone_78_79"/>
+                <string value="HairBone_80_81"/>
+                <string value="HairBone_100_101"/>
+                <string value="HairBone_96_97"/>
+                <string value="HairBone_90_91"/>
+                <string value="HairBone_88_89"/>
+                <string value="HairBone_86_87"/>
+                <string value="HairBone_84_85"/>
+              </array>
+            </field>
+            <field name="maxTrianglesPerBone"><integer value="1"/></field>
+            <field name="minimumTriangleWeight"><real dec="0.001" hex="#3f50624de0000000"/></field>
+          </record>
+        </array>
+      </field>
+    </record>
+  </object>
+  <type id="type74">
+    <name value="hctClothSetupSkinOperatorOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="10">
+      <field name="name" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="meshBindingIndex" typeid="type19" flags="32" /> <!-- hkUint32 -->
+      <field name="transformSet" typeid="type17" flags="32" /> <!-- hclToolNamedObjectReference -->
+      <field name="referenceBuffer" typeid="type17" flags="32" /> <!-- hclToolNamedObjectReference -->
+      <field name="outputBuffer" typeid="type17" flags="32" /> <!-- hclToolNamedObjectReference -->
+      <field name="skinNormals" typeid="type29" flags="32" /> <!-- hkBool -->
+      <field name="skinTangents" typeid="type29" flags="32" /> <!-- hkBool -->
+      <field name="skinBiTangents" typeid="type29" flags="32" /> <!-- hkBool -->
+      <field name="vertexSelection" typeid="type31" flags="32" /> <!-- hclVertexSelectionInput -->
+      <field name="useDualQuaternionMethod" typeid="type29" flags="32" /> <!-- hkBool -->
+    </fields>
+  </type>
+  <object id="object12" typeid="type16" > <!-- hctClothSetupObjectData -->
+    <record> <!-- hctClothSetupObjectData -->
+      <field name="ref">
+        <record> <!-- hclToolNamedObjectReference -->
+          <field name="pluginName"><string value="SetupOperatorAnimSkin"/></field>
+          <field name="objectName"><string value="Skin Simulation"/></field>
+          <field name="hash"><integer value="1358256630"/></field>
+        </record>
+      </field>
+      <field name="options">
+        <array count="1" elementtypeid="type74"> <!-- ArrayOf hctClothSetupSkinOperatorOptions -->
+          <record> <!-- hctClothSetupSkinOperatorOptions -->
+            <field name="name"><string value="Skin Simulation"/></field>
+            <field name="meshBindingIndex"><integer value="4294967295"/></field>
+            <field name="transformSet">
+              <record> <!-- hclToolNamedObjectReference -->
+                <field name="pluginName"><string value="SetupSkeletalXformSet"/></field>
+                <field name="objectName"><string value="Root TransformSet"/></field>
+                <field name="hash"><integer value="1501834895"/></field>
+              </record>
+            </field>
+            <field name="referenceBuffer">
+              <record> <!-- hclToolNamedObjectReference -->
+                <field name="pluginName"><string value="SetupSceneBuffer"/></field>
+                <field name="objectName"><string value="StaticBuf"/></field>
+                <field name="hash"><integer value="44796867"/></field>
+              </record>
+            </field>
+            <field name="outputBuffer">
+              <record> <!-- hclToolNamedObjectReference -->
+                <field name="pluginName"><string value="SetupScratchBuffer"/></field>
+                <field name="objectName"><string value="Sim Scratch"/></field>
+                <field name="hash"><integer value="974418409"/></field>
+              </record>
+            </field>
+            <field name="skinNormals"><bool value="true"/></field>
+            <field name="skinTangents"><bool value="true"/></field>
+            <field name="skinBiTangents"><bool value="true"/></field>
+            <field name="vertexSelection">
+              <record> <!-- hclVertexSelectionInput -->
+                <field name="type"><integer value="0"/><!-- VERTEX_SELECTION_ALL --></field>
+                <field name="channelName"><string/></field>
+              </record>
+            </field>
+            <field name="useDualQuaternionMethod"><bool value="false"/></field>
+          </record>
+        </array>
+      </field>
+    </record>
+  </object>
+  <type id="type75">
+    <name value="hctClothSetupVertGatherOperatorOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="8">
+      <field name="name" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="direction" typeid="type76" flags="32" /> <!-- hkEnum< hctClothSetupVertGatherOperatorOptions::Direction, hkUint8 > -->
+      <field name="simulationBuffer" typeid="type17" flags="32" /> <!-- hclToolNamedObjectReference -->
+      <field name="simulationParticleSelection" typeid="type31" flags="32" /> <!-- hclVertexSelectionInput -->
+      <field name="displayBuffer" typeid="type17" flags="32" /> <!-- hclToolNamedObjectReference -->
+      <field name="displayVertexSelection" typeid="type31" flags="32" /> <!-- hclVertexSelectionInput -->
+      <field name="gatherAllThreshold" typeid="type30" flags="32" /> <!-- hkReal -->
+      <field name="gatherNormals" typeid="type29" flags="32" /> <!-- hkBool -->
+    </fields>
+  </type>
+  <type id="type76">
+    <name value="hkEnum"/>
+    <format value="8196"/> <!-- uint8 (LE) -->
+    <parameters count="2">
+      <typeparam id="type77" /> <!-- hctClothSetupVertGatherOperatorOptions::Direction -->
+      <typeparam id="type38" /> <!-- hkUint8 -->
+    </parameters>
+    <fields count="1">
+      <field name="storage" typeid="type38" flags="36" /> <!-- hkUint8 -->
+    </fields>
+  </type>
+  <type id="type77">
+    <name value="hctClothSetupVertGatherOperatorOptions::Direction"/>
+    <format value="33284"/> <!-- int32 (LE) -->
+  </type>
+  <object id="object13" typeid="type16" > <!-- hctClothSetupObjectData -->
+    <record> <!-- hctClothSetupObjectData -->
+      <field name="ref">
+        <record> <!-- hclToolNamedObjectReference -->
+          <field name="pluginName"><string value="SetupOperatorVertexGather"/></field>
+          <field name="objectName"><string value="VertGather Op"/></field>
+          <field name="hash"><integer value="252086678"/></field>
+        </record>
+      </field>
+      <field name="options">
+        <array count="1" elementtypeid="type75"> <!-- ArrayOf hctClothSetupVertGatherOperatorOptions -->
+          <record> <!-- hctClothSetupVertGatherOperatorOptions -->
+            <field name="name"><string value="VertGather Op"/></field>
+            <field name="direction"><integer value="1"/><!-- DISPLAY_TO_SIMULATION --></field>
+            <field name="simulationBuffer">
+              <record> <!-- hclToolNamedObjectReference -->
+                <field name="pluginName"><string value="SetupSimBuffer"/></field>
+                <field name="objectName"><string value="Sim Buf"/></field>
+                <field name="hash"><integer value="1032708095"/></field>
+              </record>
+            </field>
+            <field name="simulationParticleSelection">
+              <record> <!-- hclVertexSelectionInput -->
+                <field name="type"><integer value="0"/><!-- VERTEX_SELECTION_ALL --></field>
+                <field name="channelName"><string/></field>
+              </record>
+            </field>
+            <field name="displayBuffer">
+              <record> <!-- hclToolNamedObjectReference -->
+                <field name="pluginName"><string value="SetupScratchBuffer"/></field>
+                <field name="objectName"><string value="Sim Scratch"/></field>
+                <field name="hash"><integer value="974418409"/></field>
+              </record>
+            </field>
+            <field name="displayVertexSelection">
+              <record> <!-- hclVertexSelectionInput -->
+                <field name="type"><integer value="0"/><!-- VERTEX_SELECTION_ALL --></field>
+                <field name="channelName"><string/></field>
+              </record>
+            </field>
+            <field name="gatherAllThreshold"><real dec="0.1" hex="#3fb99999a0000000"/></field>
+            <field name="gatherNormals"><bool value="false"/></field>
+          </record>
+        </array>
+      </field>
+    </record>
+  </object>
+  <type id="type78">
+    <name value="hctClothSetupSkeletalXformSetOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="2">
+      <field name="name" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="skelName" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+    </fields>
+  </type>
+  <object id="object14" typeid="type16" > <!-- hctClothSetupObjectData -->
+    <record> <!-- hctClothSetupObjectData -->
+      <field name="ref">
+        <record> <!-- hclToolNamedObjectReference -->
+          <field name="pluginName"><string value="SetupSkeletalXformSet"/></field>
+          <field name="objectName"><string value="Root TransformSet"/></field>
+          <field name="hash"><integer value="1501834895"/></field>
+        </record>
+      </field>
+      <field name="options">
+        <array count="1" elementtypeid="type78"> <!-- ArrayOf hctClothSetupSkeletalXformSetOptions -->
+          <record> <!-- hctClothSetupSkeletalXformSetOptions -->
+            <field name="name"><string value="Root TransformSet"/></field>
+            <field name="skelName"><string value="Root"/></field>
+          </record>
+        </array>
+      </field>
+    </record>
+  </object>
+  <type id="type79">
+    <name value="hctClothSetupStandardLinkConstraintOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="8">
+      <field name="name" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="simulationMesh" typeid="type17" flags="32" /> <!-- hclToolNamedObjectReference -->
+      <field name="vertexSelection" typeid="type31" flags="32" /> <!-- hclVertexSelectionInput -->
+      <field name="stiffness" typeid="type55" flags="32" /> <!-- hclVertexFloatInput -->
+      <field name="allowedCompression" typeid="type55" flags="32" /> <!-- hclVertexFloatInput -->
+      <field name="allowedStretching" typeid="type55" flags="32" /> <!-- hclVertexFloatInput -->
+      <field name="edgeSelection" typeid="type80" flags="32" /> <!-- hclEdgeSelectionInput -->
+      <field name="ignoreHiddenEdges" typeid="type29" flags="32" /> <!-- hkBool -->
+    </fields>
+  </type>
+  <type id="type80">
+    <name value="hclEdgeSelectionInput"/>
+    <format value="7"/> <!-- record -->
+    <fields count="2">
+      <field name="type" typeid="type81" flags="32" /> <!-- hkEnum< hclEdgeSelectionInput::EdgeSelectionType, hkUint32 > -->
+      <field name="channelName" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+    </fields>
+  </type>
+  <type id="type81">
+    <name value="hkEnum"/>
+    <format value="32772"/> <!-- uint32 (LE) -->
+    <parameters count="2">
+      <typeparam id="type82" /> <!-- hclEdgeSelectionInput::EdgeSelectionType -->
+      <typeparam id="type19" /> <!-- hkUint32 -->
+    </parameters>
+    <fields count="1">
+      <field name="storage" typeid="type19" flags="36" /> <!-- hkUint32 -->
+    </fields>
+  </type>
+  <type id="type82">
+    <name value="hclEdgeSelectionInput::EdgeSelectionType"/>
+    <format value="33284"/> <!-- int32 (LE) -->
+  </type>
+  <object id="object15" typeid="type16" > <!-- hctClothSetupObjectData -->
+    <record> <!-- hctClothSetupObjectData -->
+      <field name="ref">
+        <record> <!-- hclToolNamedObjectReference -->
+          <field name="pluginName"><string value="SetupConstraintSetStandardLink"/></field>
+          <field name="objectName"><string value="StandardLink Constraint"/></field>
+          <field name="hash"><integer value="713678762"/></field>
+        </record>
+      </field>
+      <field name="options">
+        <array count="1" elementtypeid="type79"> <!-- ArrayOf hctClothSetupStandardLinkConstraintOptions -->
+          <record> <!-- hctClothSetupStandardLinkConstraintOptions -->
+            <field name="name"><string value="StandardLink Constraint"/></field>
+            <field name="simulationMesh">
+              <record> <!-- hclToolNamedObjectReference -->
+                <field name="pluginName"><string value="SetupSimMesh"/></field>
+                <field name="objectName"><string value="Sim Scratch"/></field>
+                <field name="hash"><integer value="1367440477"/></field>
+              </record>
+            </field>
+            <field name="vertexSelection">
+              <record> <!-- hclVertexSelectionInput -->
+                <field name="type"><integer value="0"/><!-- VERTEX_SELECTION_ALL --></field>
+                <field name="channelName"><string/></field>
+              </record>
+            </field>
+            <field name="stiffness">
+              <record> <!-- hclVertexFloatInput -->
+                <field name="type"><integer value="0"/><!-- VERTEX_FLOAT_CONSTANT --></field>
+                <field name="constantValue"><real dec="1" hex="#3ff0000000000000"/></field>
+                <field name="channelName"><string/></field>
+                <field name="overrideScale"><bool value="false"/></field>
+                <field name="overrideScaleMin"><real dec="0" hex="#0"/></field>
+                <field name="overrideScaleMax"><real dec="0" hex="#0"/></field>
+              </record>
+            </field>
+            <field name="allowedCompression">
+              <record> <!-- hclVertexFloatInput -->
+                <field name="type"><integer value="0"/><!-- VERTEX_FLOAT_CONSTANT --></field>
+                <field name="constantValue"><real dec="0" hex="#0"/></field>
+                <field name="channelName"><string/></field>
+                <field name="overrideScale"><bool value="false"/></field>
+                <field name="overrideScaleMin"><real dec="0" hex="#0"/></field>
+                <field name="overrideScaleMax"><real dec="0" hex="#0"/></field>
+              </record>
+            </field>
+            <field name="allowedStretching">
+              <record> <!-- hclVertexFloatInput -->
+                <field name="type"><integer value="0"/><!-- VERTEX_FLOAT_CONSTANT --></field>
+                <field name="constantValue"><real dec="0" hex="#0"/></field>
+                <field name="channelName"><string/></field>
+                <field name="overrideScale"><bool value="false"/></field>
+                <field name="overrideScaleMin"><real dec="0" hex="#0"/></field>
+                <field name="overrideScaleMax"><real dec="0" hex="#0"/></field>
+              </record>
+            </field>
+            <field name="edgeSelection">
+              <record> <!-- hclEdgeSelectionInput -->
+                <field name="type"><integer value="0"/><!-- EDGE_SELECTION_ALL --></field>
+                <field name="channelName"><string/></field>
+              </record>
+            </field>
+            <field name="ignoreHiddenEdges"><bool value="false"/></field>
+          </record>
+        </array>
+      </field>
+    </record>
+  </object>
+  <object id="object16" typeid="type16" > <!-- hctClothSetupObjectData -->
+    <record> <!-- hctClothSetupObjectData -->
+      <field name="ref">
+        <record> <!-- hclToolNamedObjectReference -->
+          <field name="pluginName"><string value="SetupConstraintSetStandardLink"/></field>
+          <field name="objectName"><string value="Standard Link Constraint"/></field>
+          <field name="hash"><integer value="591988394"/></field>
+        </record>
+      </field>
+      <field name="options">
+        <array count="1" elementtypeid="type79"> <!-- ArrayOf hctClothSetupStandardLinkConstraintOptions -->
+          <record> <!-- hctClothSetupStandardLinkConstraintOptions -->
+            <field name="name"><string value="Standard Link Constraint"/></field>
+            <field name="simulationMesh">
+              <record> <!-- hclToolNamedObjectReference -->
+                <field name="pluginName"><string value="SetupSimMesh"/></field>
+                <field name="objectName"><string value="SimSkirt SimMesh"/></field>
+                <field name="hash"><integer value="1675554456"/></field>
+              </record>
+            </field>
+            <field name="vertexSelection">
+              <record> <!-- hclVertexSelectionInput -->
+                <field name="type"><integer value="0"/><!-- VERTEX_SELECTION_ALL --></field>
+                <field name="channelName"><string/></field>
+              </record>
+            </field>
+            <field name="stiffness">
+              <record> <!-- hclVertexFloatInput -->
+                <field name="type"><integer value="0"/><!-- VERTEX_FLOAT_CONSTANT --></field>
+                <field name="constantValue"><real dec="1" hex="#3ff0000000000000"/></field>
+                <field name="channelName"><string/></field>
+                <field name="overrideScale"><bool value="false"/></field>
+                <field name="overrideScaleMin"><real dec="0" hex="#0"/></field>
+                <field name="overrideScaleMax"><real dec="0" hex="#0"/></field>
+              </record>
+            </field>
+            <field name="allowedCompression">
+              <record> <!-- hclVertexFloatInput -->
+                <field name="type"><integer value="0"/><!-- VERTEX_FLOAT_CONSTANT --></field>
+                <field name="constantValue"><real dec="0" hex="#0"/></field>
+                <field name="channelName"><string/></field>
+                <field name="overrideScale"><bool value="false"/></field>
+                <field name="overrideScaleMin"><real dec="0" hex="#0"/></field>
+                <field name="overrideScaleMax"><real dec="0" hex="#0"/></field>
+              </record>
+            </field>
+            <field name="allowedStretching">
+              <record> <!-- hclVertexFloatInput -->
+                <field name="type"><integer value="0"/><!-- VERTEX_FLOAT_CONSTANT --></field>
+                <field name="constantValue"><real dec="0" hex="#0"/></field>
+                <field name="channelName"><string/></field>
+                <field name="overrideScale"><bool value="false"/></field>
+                <field name="overrideScaleMin"><real dec="0" hex="#0"/></field>
+                <field name="overrideScaleMax"><real dec="0" hex="#0"/></field>
+              </record>
+            </field>
+            <field name="edgeSelection">
+              <record> <!-- hclEdgeSelectionInput -->
+                <field name="type"><integer value="0"/><!-- EDGE_SELECTION_ALL --></field>
+                <field name="channelName"><string/></field>
+              </record>
+            </field>
+            <field name="ignoreHiddenEdges"><bool value="false"/></field>
+          </record>
+        </array>
+      </field>
+    </record>
+  </object>
+  <type id="type83">
+    <name value="hctClothSetupStretchLinkConstraintOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="11">
+      <field name="name" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="simulationMesh" typeid="type17" flags="32" /> <!-- hclToolNamedObjectReference -->
+      <field name="movableParticles" typeid="type31" flags="32" /> <!-- hclVertexSelectionInput -->
+      <field name="fixedParticles" typeid="type31" flags="32" /> <!-- hclVertexSelectionInput -->
+      <field name="rigidFactor" typeid="type55" flags="32" /> <!-- hclVertexFloatInput -->
+      <field name="stiffness" typeid="type55" flags="32" /> <!-- hclVertexFloatInput -->
+      <field name="stretchDirection" typeid="type44" flags="32" /> <!-- hkVector4 -->
+      <field name="useStretchDirection" typeid="type84" flags="32" /> <!-- bool -->
+      <field name="useMeshTopology" typeid="type84" flags="32" /> <!-- bool -->
+      <field name="allowDynamicLinks" typeid="type84" flags="32" /> <!-- bool -->
+      <field name="useTopologicalStretchDistance" typeid="type84" flags="32" /> <!-- bool -->
+    </fields>
+  </type>
+  <type id="type84">
+    <name value="bool"/>
+    <format value="8194"/> <!-- bool8 (unsigned, LE) -->
+  </type>
+  <object id="object17" typeid="type16" > <!-- hctClothSetupObjectData -->
+    <record> <!-- hctClothSetupObjectData -->
+      <field name="ref">
+        <record> <!-- hclToolNamedObjectReference -->
+          <field name="pluginName"><string value="SetupConstraintSetStretchLink"/></field>
+          <field name="objectName"><string value="StretchLink Constraint"/></field>
+          <field name="hash"><integer value="384936546"/></field>
+        </record>
+      </field>
+      <field name="options">
+        <array count="1" elementtypeid="type83"> <!-- ArrayOf hctClothSetupStretchLinkConstraintOptions -->
+          <record> <!-- hctClothSetupStretchLinkConstraintOptions -->
+            <field name="name"><string value="StretchLink Constraint"/></field>
+            <field name="simulationMesh">
+              <record> <!-- hclToolNamedObjectReference -->
+                <field name="pluginName"><string value="SetupSimMesh"/></field>
+                <field name="objectName"><string value="SimSkirt SimMesh"/></field>
+                <field name="hash"><integer value="1675554456"/></field>
+              </record>
+            </field>
+            <field name="movableParticles">
+              <record> <!-- hclVertexSelectionInput -->
+                <field name="type"><integer value="0"/><!-- VERTEX_SELECTION_ALL --></field>
+                <field name="channelName"><string/></field>
+              </record>
+            </field>
+            <field name="fixedParticles">
+              <record> <!-- hclVertexSelectionInput -->
+                <field name="type"><integer value="1"/><!-- VERTEX_SELECTION_NONE --></field>
+                <field name="channelName"><string/></field>
+              </record>
+            </field>
+            <field name="rigidFactor">
+              <record> <!-- hclVertexFloatInput -->
+                <field name="type"><integer value="0"/><!-- VERTEX_FLOAT_CONSTANT --></field>
+                <field name="constantValue"><real dec="1" hex="#3ff0000000000000"/></field>
+                <field name="channelName"><string/></field>
+                <field name="overrideScale"><bool value="false"/></field>
+                <field name="overrideScaleMin"><real dec="0" hex="#0"/></field>
+                <field name="overrideScaleMax"><real dec="0" hex="#0"/></field>
+              </record>
+            </field>
+            <field name="stiffness">
+              <record> <!-- hclVertexFloatInput -->
+                <field name="type"><integer value="0"/><!-- VERTEX_FLOAT_CONSTANT --></field>
+                <field name="constantValue"><real dec="1" hex="#3ff0000000000000"/></field>
+                <field name="channelName"><string/></field>
+                <field name="overrideScale"><bool value="false"/></field>
+                <field name="overrideScaleMin"><real dec="0" hex="#0"/></field>
+                <field name="overrideScaleMax"><real dec="0" hex="#0"/></field>
+              </record>
+            </field>
+            <field name="stretchDirection">
+              <array count="4" elementtypeid="type32"> <!-- ArrayOf float -->
+                <real dec="0" hex="#0"/>
+                <real dec="0" hex="#0"/>
+                <real dec="0" hex="#0"/>
+                <real dec="0" hex="#0"/>
+              </array>
+            </field>
+            <field name="useStretchDirection"><bool value="false"/></field>
+            <field name="useMeshTopology"><bool value="true"/></field>
+            <field name="allowDynamicLinks"><bool value="false"/></field>
+            <field name="useTopologicalStretchDistance"><bool value="false"/></field>
+          </record>
+        </array>
+      </field>
+    </record>
+  </object>
+  <type id="type85">
+    <name value="hctClothSetupVolumeConstraintOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="6">
+      <field name="name" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="simulationMesh" typeid="type17" flags="32" /> <!-- hclToolNamedObjectReference -->
+      <field name="applyToParticles" typeid="type31" flags="32" /> <!-- hclVertexSelectionInput -->
+      <field name="stiffness" typeid="type55" flags="32" /> <!-- hclVertexFloatInput -->
+      <field name="influenceParticles" typeid="type31" flags="32" /> <!-- hclVertexSelectionInput -->
+      <field name="particleWeights" typeid="type55" flags="32" /> <!-- hclVertexFloatInput -->
+    </fields>
+  </type>
+  <object id="object18" typeid="type16" > <!-- hctClothSetupObjectData -->
+    <record> <!-- hctClothSetupObjectData -->
+      <field name="ref">
+        <record> <!-- hclToolNamedObjectReference -->
+          <field name="pluginName"><string value="SetupConstraintSetVolume"/></field>
+          <field name="objectName"><string value="Volume Constraint"/></field>
+          <field name="hash"><integer value="1640204700"/></field>
+        </record>
+      </field>
+      <field name="options">
+        <array count="1" elementtypeid="type85"> <!-- ArrayOf hctClothSetupVolumeConstraintOptions -->
+          <record> <!-- hctClothSetupVolumeConstraintOptions -->
+            <field name="name"><string value="Volume Constraint"/></field>
+            <field name="simulationMesh">
+              <record> <!-- hclToolNamedObjectReference -->
+                <field name="pluginName"><string value="SetupSimMesh"/></field>
+                <field name="objectName"><string value="SimSkirt SimMesh"/></field>
+                <field name="hash"><integer value="1675554456"/></field>
+              </record>
+            </field>
+            <field name="applyToParticles">
+              <record> <!-- hclVertexSelectionInput -->
+                <field name="type"><integer value="0"/><!-- VERTEX_SELECTION_ALL --></field>
+                <field name="channelName"><string/></field>
+              </record>
+            </field>
+            <field name="stiffness">
+              <record> <!-- hclVertexFloatInput -->
+                <field name="type"><integer value="0"/><!-- VERTEX_FLOAT_CONSTANT --></field>
+                <field name="constantValue"><real dec="0.01" hex="#3f847ae140000000"/></field>
+                <field name="channelName"><string/></field>
+                <field name="overrideScale"><bool value="false"/></field>
+                <field name="overrideScaleMin"><real dec="0" hex="#0"/></field>
+                <field name="overrideScaleMax"><real dec="1" hex="#3ff0000000000000"/></field>
+              </record>
+            </field>
+            <field name="influenceParticles">
+              <record> <!-- hclVertexSelectionInput -->
+                <field name="type"><integer value="0"/><!-- VERTEX_SELECTION_ALL --></field>
+                <field name="channelName"><string/></field>
+              </record>
+            </field>
+            <field name="particleWeights">
+              <record> <!-- hclVertexFloatInput -->
+                <field name="type"><integer value="0"/><!-- VERTEX_FLOAT_CONSTANT --></field>
+                <field name="constantValue"><real dec="1" hex="#3ff0000000000000"/></field>
+                <field name="channelName"><string/></field>
+                <field name="overrideScale"><bool value="false"/></field>
+                <field name="overrideScaleMin"><real dec="0" hex="#0"/></field>
+                <field name="overrideScaleMax"><real dec="0" hex="#0"/></field>
+              </record>
+            </field>
+          </record>
+        </array>
+      </field>
+    </record>
+  </object>
+  <type id="type86">
+    <name value="hctClothSetupDefaultStateOptions"/>
+    <format value="7"/> <!-- record -->
+    <fields count="2">
+      <field name="name" typeid="type11" flags="32" /> <!-- hkStringPtr -->
+      <field name="operators" typeid="type48" flags="32" /> <!-- hkArray< hclToolNamedObjectReference, hkContainerHeapAllocator > -->
+    </fields>
+  </type>
+  <object id="object19" typeid="type16" > <!-- hctClothSetupObjectData -->
+    <record> <!-- hctClothSetupObjectData -->
+      <field name="ref">
+        <record> <!-- hclToolNamedObjectReference -->
+          <field name="pluginName"><string value="SetupDefaultState"/></field>
+          <field name="objectName"><string value="Simulate"/></field>
+          <field name="hash"><integer value="157812384"/></field>
+        </record>
+      </field>
+      <field name="options">
+        <array count="1" elementtypeid="type86"> <!-- ArrayOf hctClothSetupDefaultStateOptions -->
+          <record> <!-- hctClothSetupDefaultStateOptions -->
+            <field name="name"><string value="Simulate"/></field>
+            <field name="operators">
+              <array count="4" elementtypeid="type17"> <!-- ArrayOf hclToolNamedObjectReference -->
+                <record> <!-- hclToolNamedObjectReference -->
+                  <field name="pluginName"><string value="SetupOperatorAnimSkin"/></field>
+                  <field name="objectName"><string value="Skin Simulation"/></field>
+                  <field name="hash"><integer value="1358256630"/></field>
+                </record>
+                <record> <!-- hclToolNamedObjectReference -->
+                  <field name="pluginName"><string value="SetupOperatorMoveParticles"/></field>
+                  <field name="objectName"><string value="Move Particles"/></field>
+                  <field name="hash"><integer value="1838379646"/></field>
+                </record>
+                <record> <!-- hclToolNamedObjectReference -->
+                  <field name="pluginName"><string value="SetupOperatorSimulate"/></field>
+                  <field name="objectName"><string value="Sim"/></field>
+                  <field name="hash"><integer value="661916367"/></field>
+                </record>
+                <record> <!-- hclToolNamedObjectReference -->
+                  <field name="pluginName"><string value="SetupOperatorMeshBone"/></field>
+                  <field name="objectName"><string value="Deform"/></field>
+                  <field name="hash"><integer value="807565104"/></field>
+                </record>
+              </array>
+            </field>
+          </record>
+        </array>
+      </field>
+    </record>
+  </object>
+  <object id="object20" typeid="type16" > <!-- hctClothSetupObjectData -->
+    <record> <!-- hctClothSetupObjectData -->
+      <field name="ref">
+        <record> <!-- hclToolNamedObjectReference -->
+          <field name="pluginName"><string value="SetupDefaultState"/></field>
+          <field name="objectName"><string value="Animate"/></field>
+          <field name="hash"><integer value="1222065915"/></field>
+        </record>
+      </field>
+      <field name="options">
+        <array count="1" elementtypeid="type86"> <!-- ArrayOf hctClothSetupDefaultStateOptions -->
+          <record> <!-- hctClothSetupDefaultStateOptions -->
+            <field name="name"><string value="Animate"/></field>
+            <field name="operators">
+              <array count="3" elementtypeid="type17"> <!-- ArrayOf hclToolNamedObjectReference -->
+                <record> <!-- hclToolNamedObjectReference -->
+                  <field name="pluginName"><string value="SetupOperatorAnimSkin"/></field>
+                  <field name="objectName"><string value="Skin Simulation"/></field>
+                  <field name="hash"><integer value="1358256630"/></field>
+                </record>
+                <record> <!-- hclToolNamedObjectReference -->
+                  <field name="pluginName"><string value="SetupOperatorVertexGather"/></field>
+                  <field name="objectName"><string value="VertGather Op"/></field>
+                  <field name="hash"><integer value="252086678"/></field>
+                </record>
+                <record> <!-- hclToolNamedObjectReference -->
+                  <field name="pluginName"><string value="SetupOperatorMeshBone"/></field>
+                  <field name="objectName"><string value="Deform"/></field>
+                  <field name="hash"><integer value="807565104"/></field>
+                </record>
+              </array>
+            </field>
+          </record>
+        </array>
+      </field>
+    </record>
+  </object>
+</hktagfile>

@@ -11,11 +11,18 @@ def list_saved_files(self, context):
     
     if props.exportpath and props.exportpath != "//":
         blend_path = props.exportpath
+        blend_directory = blend_path
+    elif props.exportpath == "//": 
+        # bad, shouldn't happen but we try to fix anyway
+        # from my experience this works but blender pukes a ton of errors to console while doing it
+        blend_path = bpy.data.filepath
+        blend_directory = os.path.abspath(os.path.dirname(blend_path))
+        props.exportpath = blend_directory
     else:
         blend_path = bpy.data.filepath
         blend_directory = os.path.dirname(blend_path)
 
-    folder = os.path.join(blend_directory, "export_data", "selectionsets")
+    folder = os.path.abspath(os.path.join(blend_directory, "export_data", "selectionsets"))
     if not os.path.exists(folder):
         printf(f"No export data at {folder}")
         return [("NONE", "None", "", 0)]

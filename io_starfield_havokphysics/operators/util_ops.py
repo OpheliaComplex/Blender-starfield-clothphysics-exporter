@@ -77,6 +77,11 @@ class OpenSelectionSetFolderOperator(bpy.types.Operator):
             folder = bpy.data.filepath
             self.report({'WARNING'}, "Export folder have not been set, using blend file path")
 
+        if folder == "//":
+            #in that case just override to abspath
+            blend_path = bpy.data.filepath
+            folder = os.path.dirname(blend_path)
+
         if os.name == 'nt':
             subprocess.Popen(f'explorer "{folder}"')
         elif os.name == 'posix':
@@ -85,15 +90,25 @@ class OpenSelectionSetFolderOperator(bpy.types.Operator):
             self.report({'WARNING'}, "Unsupported OS for opening folder")
         return {'FINISHED'}
 
-class SimpleFileBrowserOperator(bpy.types.Operator):
+class SelectAbsDirPathBrowserOperator(bpy.types.Operator):
     bl_idname = "wm.select_export_folder"
     bl_label = "Select Export Folder"
+
+    filepath: bpy.props.StringProperty(subtype='DIR_PATH')
 
     # This will execute when the user selects a folder
     def execute(self, context):
         # Get the file path selected by the user
+        selected_directory = self.filepath
+
+        #detect relative path blender syntax
+        if selected_directory == "//":
+            #in that case just override to abspath
+            blend_path = bpy.data.filepath
+            selected_directory = os.path.dirname(blend_path)
+
         props = context.scene.hkxPhysicsExport_props
-        context.scene.exportpath = props.filepath
+        props.exportpath = selected_directory
         return {'FINISHED'}
 
     # This defines the file browser settings

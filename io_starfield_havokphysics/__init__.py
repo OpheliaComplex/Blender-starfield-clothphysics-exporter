@@ -34,7 +34,7 @@ import bpy
 from io_starfield_havokphysics.ui.panels import HavokPhysicsPanel
 from io_starfield_havokphysics.ui.properties import HavokExportProperties
 from io_starfield_havokphysics.operators.export_ops import ExportVertexGroupWeightsOperator, SaveHKXSelectionSetOperator,  ExportFBXAndRunImporterOperator, PostProcessHKXOperator
-from io_starfield_havokphysics.operators.util_ops import SelectVerticesFromFileOperator, OpenSelectionSetFolderOperator, SimpleFileBrowserOperator
+from io_starfield_havokphysics.operators.util_ops import SelectVerticesFromFileOperator, OpenSelectionSetFolderOperator, SelectAbsDirPathBrowserOperator
 
 
 classes = [
@@ -46,7 +46,7 @@ classes = [
     OpenSelectionSetFolderOperator, 
     ExportFBXAndRunImporterOperator, 
     PostProcessHKXOperator,
-    SimpleFileBrowserOperator
+    SelectAbsDirPathBrowserOperator
 ]
 
 def register():

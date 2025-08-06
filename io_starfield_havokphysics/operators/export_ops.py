@@ -1,4 +1,5 @@
 import bpy
+import bmesh
 import os
 import subprocess
 from io_starfield_havokphysics.export_util.starfield_export import starfield_fbx_export
@@ -78,8 +79,7 @@ class ExportVertexGroupWeightsOperator(bpy.types.Operator):
         props = context.scene.hkxPhysicsExport_props
         export_mode = props.export_type
         
-        clamp_min = context.scene.hkxPhysicsExport_props.clamp_min
-        clamp_max = context.scene.hkxPhysicsExport_props.clamp_max
+
         
         export_mode_int = {
             'FLOAT': 0,
@@ -91,8 +91,7 @@ class ExportVertexGroupWeightsOperator(bpy.types.Operator):
             with open(filepath, 'w') as f:
                 f.write(f"{export_mode_int}\n")
                 for uv_idx, hex_weight in loop_weights:
-                    w = (hex_weight * (clamp_max - clamp_min)) + clamp_min
-                    f.write(f"{round(w, 5)}\n")
+                    f.write(f"{round(hex_weight, 5)}\n")
         except Exception as e:
             self.report({'ERROR'}, f"Failed to write file: {str(e)}")
             return {'CANCELLED'}
